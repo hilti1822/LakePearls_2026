@@ -32,7 +32,6 @@
     min-height: 100vh;
   }
 
-  /* ── HEADER ── */
   header {
     border-bottom: 1px solid var(--border);
     padding: 20px 32px 18px;
@@ -41,17 +40,8 @@
     gap: 16px;
     flex-wrap: wrap;
   }
-  header h1 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    color: var(--text);
-  }
-  header .sub {
-    font-size: 0.78rem;
-    color: var(--text2);
-    font-weight: 300;
-  }
+  header h1 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text); }
+  header .sub { font-size: 0.78rem; color: var(--text2); font-weight: 300; }
   .year-badge {
     margin-left: auto;
     font-family: 'IBM Plex Mono', monospace;
@@ -62,7 +52,6 @@
     border-radius: 20px;
   }
 
-  /* ── MONTH NAV ── */
   .month-nav {
     display: flex;
     gap: 4px;
@@ -88,12 +77,7 @@
     flex-shrink: 0;
   }
   .month-btn:hover { border-color: var(--accent); color: var(--accent); }
-  .month-btn.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-    font-weight: 700;
-  }
+  .month-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
   .month-btn.has-data::after {
     content: '';
     display: inline-block;
@@ -107,14 +91,11 @@
   }
   .month-btn.active.has-data::after { background: #fff; }
 
-  /* ── CONTENT ── */
   .content { padding: 28px 32px 60px; max-width: 960px; margin: 0 auto; }
 
-  /* month panel */
   .month-panel { display: none; }
   .month-panel.active { display: block; }
 
-  /* empty state */
   .empty-state {
     display: flex;
     flex-direction: column;
@@ -125,10 +106,7 @@
     color: var(--text3);
     text-align: center;
   }
-  .empty-state .icon {
-    font-size: 2.8rem;
-    opacity: 0.4;
-  }
+  .empty-state .icon { font-size: 2.8rem; opacity: 0.4; }
   .empty-state p { font-size: 0.9rem; line-height: 1.7; }
   .empty-state code {
     display: inline-block;
@@ -142,7 +120,6 @@
     border: 1px solid var(--border);
   }
 
-  /* ── SECTION TITLE ── */
   .section-label {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.68rem;
@@ -154,49 +131,22 @@
   }
   .section-label:first-child { margin-top: 0; }
 
-  /* ── KPI ROW ── */
   .kpi-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 12px;
     margin-bottom: 6px;
   }
-  .kpi {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 18px 20px;
-  }
-  .kpi .label {
-    font-size: 0.72rem;
-    color: var(--text2);
-    margin-bottom: 8px;
-    font-weight: 400;
-  }
-  .kpi .value {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.35rem;
-    font-weight: 600;
-    color: var(--text);
-    letter-spacing: -0.02em;
-  }
+  .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+  .kpi .label { font-size: 0.72rem; color: var(--text2); margin-bottom: 8px; font-weight: 400; }
+  .kpi .value { font-family: 'IBM Plex Mono', monospace; font-size: 1.35rem; font-weight: 600; color: var(--text); letter-spacing: -0.02em; }
   .kpi .unit { font-size: 0.75rem; margin-left: 2px; font-weight: 400; color: var(--text2); }
   .kpi.positive .value { color: var(--positive); }
   .kpi.negative .value { color: var(--negative); }
   .kpi.accent .value { color: var(--accent); }
 
-  /* ── TABLE ── */
-  .table-wrap {
-    overflow-x: auto;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    margin-bottom: 6px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.82rem;
-  }
+  .table-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid var(--border); margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   thead th {
     background: var(--surface2);
     padding: 10px 14px;
@@ -217,96 +167,31 @@
     font-family: 'IBM Plex Mono', monospace;
     white-space: nowrap;
   }
-  tbody td:first-child {
-    text-align: left;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.81rem;
-    color: var(--text2);
-  }
+  tbody td:first-child { text-align: left; font-family: 'Noto Sans KR', sans-serif; font-size: 0.81rem; color: var(--text2); }
   tbody tr:last-child td { border-bottom: none; }
-  tbody tr.total td {
-    background: var(--surface2);
-    font-weight: 700;
-    color: var(--text);
-    border-top: 1px solid var(--border);
-    border-bottom: none;
-  }
+  tbody tr.total td { background: var(--surface2); font-weight: 700; color: var(--text); border-top: 1px solid var(--border); border-bottom: none; }
   tbody tr.total td:first-child { font-family: 'Noto Sans KR', sans-serif; }
   .pos { color: var(--positive) !important; }
   .neg { color: var(--negative) !important; }
 
-  /* ── FIRE INSPECTION ── */
-  .fire-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 10px;
-  }
-  .fire-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 14px 16px;
-  }
-  .fire-card.urgent {
-    border-color: var(--danger);
-    background: rgba(255,107,107,0.05);
-  }
-  .fire-card .floor {
-    font-size: 0.7rem;
-    font-family: 'IBM Plex Mono', monospace;
-    color: var(--text3);
-    margin-bottom: 4px;
-  }
-  .fire-card .room {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 6px;
-  }
+  .fire-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .fire-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+  .fire-card.urgent { border-color: var(--danger); background: rgba(255,107,107,0.05); }
+  .fire-card .floor { font-size: 0.7rem; font-family: 'IBM Plex Mono', monospace; color: var(--text3); margin-bottom: 4px; }
+  .fire-card .room { font-size: 0.78rem; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
   .fire-card.urgent .room { color: var(--danger); }
   .fire-card .items { list-style: none; }
-  .fire-card .items li {
-    font-size: 0.78rem;
-    color: var(--text2);
-    padding: 2px 0;
-    padding-left: 10px;
-    position: relative;
-    line-height: 1.5;
-  }
-  .fire-card .items li::before {
-    content: '·';
-    position: absolute;
-    left: 0;
-    color: var(--text3);
-  }
+  .fire-card .items li { font-size: 0.78rem; color: var(--text2); padding: 2px 0; padding-left: 10px; position: relative; line-height: 1.5; }
+  .fire-card .items li::before { content: '·'; position: absolute; left: 0; color: var(--text3); }
   .fire-card.urgent .items li::before { color: var(--danger); }
 
-  /* ── CHART (CSS bar) ── */
   .bar-chart { display: flex; flex-direction: column; gap: 8px; }
   .bar-row { display: flex; align-items: center; gap: 10px; }
   .bar-label { font-size: 0.75rem; color: var(--text2); min-width: 120px; flex-shrink: 0; }
-  .bar-track {
-    flex: 1;
-    background: var(--surface2);
-    border-radius: 4px;
-    height: 8px;
-    overflow: hidden;
-  }
-  .bar-fill {
-    height: 100%;
-    border-radius: 4px;
-    background: var(--accent);
-    transition: width 0.6s ease;
-  }
+  .bar-track { flex: 1; background: var(--surface2); border-radius: 4px; height: 8px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; background: var(--accent); transition: width 0.6s ease; }
   .bar-fill.alt { background: var(--accent2); }
-  .bar-val {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--text2);
-    min-width: 80px;
-    text-align: right;
-    flex-shrink: 0;
-  }
+  .bar-val { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text2); min-width: 80px; text-align: right; flex-shrink: 0; }
 
   @media (max-width: 600px) {
     header, .month-nav, .content { padding-left: 16px; padding-right: 16px; }
@@ -339,40 +224,38 @@
 
 <div class="content">
 
-  <!-- ════ 1~4월, 6~12월: 빈 상태 ════ -->
   <div class="month-panel" id="panel-1">
     <div class="empty-state">
       <div class="icon">📂</div>
-      <p>1월 자료가 아직 등록되지 않았습니다.<br>자료가 준비되면 이 파일을 수정해 추가해 주세요.</p>
-      <code>id="panel-1" 섹션에 데이터를 입력하세요</code>
+      <p>1월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-01.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-01.json</code>
     </div>
   </div>
 
   <div class="month-panel" id="panel-2">
     <div class="empty-state">
       <div class="icon">📂</div>
-      <p>2월 자료가 아직 등록되지 않았습니다.</p>
-      <code>id="panel-2" 섹션에 데이터를 입력하세요</code>
+      <p>2월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-02.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-02.json</code>
     </div>
   </div>
 
   <div class="month-panel" id="panel-3">
     <div class="empty-state">
       <div class="icon">📂</div>
-      <p>3월 자료가 아직 등록되지 않았습니다.</p>
-      <code>id="panel-3" 섹션에 데이터를 입력하세요</code>
+      <p>3월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-03.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-03.json</code>
     </div>
   </div>
 
   <div class="month-panel" id="panel-4">
     <div class="empty-state">
       <div class="icon">📂</div>
-      <p>4월 자료가 아직 등록되지 않았습니다.</p>
-      <code>id="panel-4" 섹션에 데이터를 입력하세요</code>
+      <p>4월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-04.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-04.json</code>
     </div>
   </div>
 
-  <!-- ════ 5월 데이터 ════ -->
   <div class="month-panel" id="panel-5">
 
     <p class="section-label">요약</p>
@@ -389,276 +272,159 @@
         <div class="label">관리비 계좌 잔고</div>
         <div class="value">10,582,617<span class="unit">원</span></div>
       </div>
-      <div class="kpi">
+      <div class="kpi ">
         <div class="label">선수금 계좌 잔고</div>
         <div class="value">202<span class="unit">원</span></div>
-      </div>
-    </div>
-
+      </div></div>
+    
+    
     <p class="section-label">항목별 지출 요약</p>
     <div class="bar-chart" style="margin-bottom:24px;">
       <div class="bar-row">
         <span class="bar-label">공과금</span>
-        <div class="bar-track"><div class="bar-fill" style="width:44.8%"></div></div>
+        <div class="bar-track"><div class="bar-fill" style="width:99.7%"></div></div>
         <span class="bar-val">16,957,080</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">위탁관리비</span>
-        <div class="bar-track"><div class="bar-fill" style="width:44.9%"></div></div>
+        <div class="bar-track"><div class="bar-fill alt" style="width:100.0%"></div></div>
         <span class="bar-val">17,000,000</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">잡수익 대체</span>
-        <div class="bar-track"><div class="bar-fill alt" style="width:1.8%"></div></div>
+        <div class="bar-track"><div class="bar-fill" style="width:3.9%"></div></div>
         <span class="bar-val">669,400</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">대체 지출</span>
-        <div class="bar-track"><div class="bar-fill alt" style="width:5.5%"></div></div>
+        <div class="bar-track"><div class="bar-fill alt" style="width:12.3%"></div></div>
         <span class="bar-val">2,084,260</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">일반관리비</span>
-        <div class="bar-track"><div class="bar-fill alt" style="width:0.1%"></div></div>
+        <div class="bar-track"><div class="bar-fill" style="width:0.2%"></div></div>
         <span class="bar-val">27,210</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">복리·활동비</span>
-        <div class="bar-track"><div class="bar-fill alt" style="width:2.9%"></div></div>
+        <div class="bar-track"><div class="bar-fill alt" style="width:6.5%"></div></div>
         <span class="bar-val">1,100,000</span>
-      </div>
-    </div>
-
+      </div></div>
+    
+    <p class="section-label">항목별 지출 요약</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr>
-            <th>분류</th><th>지출</th><th>수입</th><th>차인</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1. 공과금 소계</td><td>16,957,080</td><td>23,169,485</td><td class="pos">+6,212,405</td></tr>
-          <tr><td>2. 위탁관리비 소계</td><td>17,000,000</td><td>24,920,390</td><td class="pos">+7,920,390</td></tr>
-          <tr><td>3. 일반관리비 소계</td><td>27,210</td><td>—</td><td class="neg">-27,210</td></tr>
-          <tr><td>4. 복리·활동비 소계</td><td>1,100,000</td><td>—</td><td class="neg">-1,100,000</td></tr>
-          <tr><td>6. 잡수익 대체 소계</td><td>669,400</td><td>—</td><td class="neg">-669,400</td></tr>
-          <tr><td>7. 대체 지출 소계</td><td>2,084,260</td><td>—</td><td class="neg">-2,084,260</td></tr>
-          <tr><td>8. 기타</td><td>—</td><td>330,692</td><td class="pos">+330,692</td></tr>
-          <tr class="total"><td>합계</td><td>37,837,950</td><td>48,420,567</td><td class="pos">+10,582,617</td></tr>
-        </tbody>
+        <thead><tr><th>분류</th><th>지출</th><th>수입</th><th>차인</th></tr></thead>
+        <tbody><tr><td>1. 공과금 소계</td><td>16,957,080</td><td>23,169,485</td><td class="pos">+6,212,405</td></tr><tr><td>2. 위탁관리비 소계</td><td>17,000,000</td><td>24,920,390</td><td class="pos">+7,920,390</td></tr><tr><td>3. 일반관리비 소계</td><td>27,210</td><td>—</td><td class="neg">-27,210</td></tr><tr><td>4. 복리·활동비 소계</td><td>1,100,000</td><td>—</td><td class="neg">-1,100,000</td></tr><tr><td>6. 잡수익 대체 소계</td><td>669,400</td><td>—</td><td class="neg">-669,400</td></tr><tr><td>7. 대체 지출 소계</td><td>2,084,260</td><td>—</td><td class="neg">-2,084,260</td></tr><tr><td>8. 기타</td><td>—</td><td>330,692</td><td class="pos">+330,692</td></tr><tr class="total"><td>합계</td><td>37,837,950</td><td>48,420,567</td><td class="pos">+10,582,617</td></tr></tbody>
       </table>
     </div>
-
     <p class="section-label">1. 공과금 세부</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>내역</th><th>수입(이월)</th><th>지출</th><th>차인</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>전기료</td><td>23,169,485</td><td>13,572,100</td><td class="pos">+9,597,385</td></tr>
-          <tr><td>상·하수도료</td><td>—</td><td>3,212,270</td><td class="neg">-3,212,270</td></tr>
-          <tr><td>일반 전화료</td><td>—</td><td>8,260</td><td class="neg">-8,260</td></tr>
-          <tr><td>승강기 비상전화료</td><td>—</td><td>3,850</td><td class="neg">-3,850</td></tr>
-          <tr><td>인터넷·카드단말기 사용료</td><td>—</td><td>34,100</td><td class="neg">-34,100</td></tr>
-          <tr><td>TV수신료·CCTV(세콤)</td><td>—</td><td>126,500</td><td class="neg">-126,500</td></tr>
-          <tr class="total"><td>소계</td><td>23,169,485</td><td>16,957,080</td><td class="pos">+6,212,405</td></tr>
-        </tbody>
+        <thead><tr><th>내역</th><th>수입(이월)</th><th>지출</th><th>차인</th></tr></thead>
+        <tbody><tr><td>전기료</td><td>23,169,485</td><td>13,572,100</td><td class="pos">+9,597,385</td></tr><tr><td>상·하수도료</td><td>—</td><td>3,212,270</td><td class="neg">-3,212,270</td></tr><tr><td>일반 전화료</td><td>—</td><td>8,260</td><td class="neg">-8,260</td></tr><tr><td>승강기 비상전화료</td><td>—</td><td>3,850</td><td class="neg">-3,850</td></tr><tr><td>인터넷·카드단말기 사용료</td><td>—</td><td>34,100</td><td class="neg">-34,100</td></tr><tr><td>TV수신료·CCTV(세콤)</td><td>—</td><td>126,500</td><td class="neg">-126,500</td></tr><tr class="total"><td>소계</td><td>23,169,485</td><td>16,957,080</td><td class="pos">+6,212,405</td></tr></tbody>
       </table>
     </div>
-
     <p class="section-label">2. 위탁관리비 세부</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>내역</th><th>수입</th><th>지출</th><th>차인</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>시설 관리비 (태림 위탁관리비)</td><td>—</td><td>17,000,000</td><td class="neg">-17,000,000</td></tr>
-          <tr><td>세대 관리비 (선수금계좌 이체금 포함)</td><td>24,920,390</td><td>—</td><td class="pos">+24,920,390</td></tr>
-          <tr class="total"><td>소계</td><td>24,920,390</td><td>17,000,000</td><td class="pos">+7,920,390</td></tr>
-        </tbody>
+        <thead><tr><th>내역</th><th>수입</th><th>지출</th><th>차인</th></tr></thead>
+        <tbody><tr><td>시설 관리비 (태림 위탁관리비)</td><td>—</td><td>17,000,000</td><td class="neg">-17,000,000</td></tr><tr><td>세대 관리비 (선수금계좌 이체금 포함)</td><td>24,920,390</td><td>—</td><td class="pos">+24,920,390</td></tr><tr class="total"><td>소계</td><td>24,920,390</td><td>17,000,000</td><td class="pos">+7,920,390</td></tr></tbody>
       </table>
     </div>
-
     <p class="section-label">3. 일반관리비 / 4. 복리·활동비</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>내역</th><th>지출</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>압류/수수료·인지대·우편요금</td><td>27,210</td></tr>
-          <tr><td>번영회장판공비·관리단대표위임수수료</td><td>1,100,000</td></tr>
-          <tr class="total"><td>소계</td><td>1,127,210</td></tr>
-        </tbody>
+        <thead><tr><th>내역</th><th>지출</th></tr></thead>
+        <tbody><tr><td>압류/수수료·인지대·우편요금</td><td>27,210</td></tr><tr><td>번영회장판공비·관리단대표위임수수료</td><td>1,100,000</td></tr><tr class="total"><td>소계</td><td>1,127,210</td></tr></tbody>
       </table>
     </div>
-
     <p class="section-label">6. 잡수익 대체 / 7. 대체 지출</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>내역</th><th>지출</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>배관수리 통수비 (요석제거제구입비)</td><td>350,000</td></tr>
-          <tr><td>건물 보조설비 수리비 (부품·공구구입비)</td><td>85,120</td></tr>
-          <tr><td>기타 청소용품비 / 폐기물처리비</td><td>234,280</td></tr>
-          <tr><td colspan="2" style="color:var(--text3);font-size:0.72rem;font-family:'Noto Sans KR',sans-serif;">— 대체 지출 —</td></tr>
-          <tr><td>소방설비·타워주차기·승강기 수리비</td><td>1,800,000</td></tr>
-          <tr><td>특근비·귀성비·휴가비·근로자의날 격려비</td><td>258,360</td></tr>
-          <tr><td>기타 (청정기·생수·마스크·회의비·묘목·히터)</td><td>25,900</td></tr>
-          <tr class="total"><td>합계</td><td>2,753,660</td></tr>
-        </tbody>
+        <thead><tr><th>내역</th><th>지출</th></tr></thead>
+        <tbody><tr><td>배관수리 통수비(요석제거제구입비)</td><td>350,000</td></tr><tr><td>건물 보조설비 수리비(부품 공구구입비)</td><td>85,120</td></tr><tr><td>기타(청소용품비)(폐기물처리비)</td><td>234,280</td></tr><tr><td>소방설비·타워주차기·승강기 수리비</td><td>1,800,000</td></tr><tr><td>특근비·귀성비·휴가비·근로자의날격려비</td><td>258,360</td></tr><tr><td>기타(청정기·생수·마스크·회의비용·묘목·히터)</td><td>25,900</td></tr><tr class="total"><td>합계</td><td>2,753,660</td></tr></tbody>
       </table>
     </div>
-
-    <p class="section-label">선수금 계좌</p>
-    <div class="kpi-row" style="margin-bottom:16px;">
-      <div class="kpi accent">
-        <div class="label">선수금 수입</div>
-        <div class="value">1,000,202<span class="unit">원</span></div>
-      </div>
-      <div class="kpi negative">
-        <div class="label">선수금 지출 (관리비 통장 이체)</div>
-        <div class="value">1,000,000<span class="unit">원</span></div>
-      </div>
-      <div class="kpi">
-        <div class="label">잔고</div>
-        <div class="value">202<span class="unit">원</span></div>
-      </div>
-    </div>
-
+    <p class="section-label">선수금 계좌 입출금 내역</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>날짜</th><th>호실/내용</th><th>출금</th><th>입금</th><th>누계잔액</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>05.01</td><td>이월금액</td><td>—</td><td>202</td><td>202</td></tr>
-          <tr><td>05.13</td><td>강형빈</td><td>—</td><td>1,000,000</td><td>1,000,202</td></tr>
-          <tr><td>05.15</td><td>관리비 계좌 이체</td><td>1,000,000</td><td>—</td><td>202</td></tr>
-          <tr class="total"><td>계</td><td></td><td>1,000,000</td><td>1,000,202</td><td>202</td></tr>
-        </tbody>
+        <thead><tr><th>날짜</th><th>호실/내용</th><th>출금</th><th>입금</th><th>누계잔액</th></tr></thead>
+        <tbody><tr><td>05.01</td><td>이월금액</td><td>—</td><td>202</td><td>202</td></tr><tr><td>05.13</td><td>강형빈</td><td>—</td><td>1,000,000</td><td>1,000,202</td></tr><tr><td>05.15</td><td>관리비 계좌 이체</td><td>1,000,000</td><td>—</td><td>202</td></tr><tr class="total"><td>계</td><td></td><td>1,000,000</td><td>1,000,202</td><td>202</td></tr></tbody>
       </table>
     </div>
-
-    <p class="section-label">관리비 계좌 주요 입출금 내역 (2026.05)</p>
+    <p class="section-label">관리비 계좌 — 주요 입출금 내역 (2026.05)</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>날짜</th><th>호실/내용</th><th>출금</th><th>입금</th><th>누계잔액</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>05.01</td><td>이월금액</td><td>—</td><td>23,169,485</td><td>23,169,485</td></tr>
-          <tr><td>05.04</td><td>태림 위탁관리비</td><td>17,000,000</td><td>—</td><td>8,301,945</td></tr>
-          <tr><td>05.15</td><td>전기료 4월분</td><td>9,000,000</td><td>—</td><td>912,208</td></tr>
-          <tr class="total"><td>05.31</td><td>최종 누계잔액</td><td>37,837,950</td><td>48,420,567</td><td>10,582,617</td></tr>
-        </tbody>
+        <thead><tr><th>날짜</th><th>호실/내용</th><th>출금</th><th>입금</th><th>누계잔액</th></tr></thead>
+        <tbody><tr><td>05.01</td><td>이월금액</td><td>—</td><td>23,169,485</td><td>23,169,485</td></tr><tr><td>05.04</td><td>지출 태림 위탁관리비</td><td>17,000,000</td><td>—</td><td>8,301,945</td></tr><tr><td>05.15</td><td>지출 전기료 4월분</td><td>9,000,000</td><td>—</td><td>912,208</td></tr><tr class="total"><td>05.31 최종 누계잔액</td><td></td><td>37,837,950</td><td>48,420,567</td><td>10,582,617</td></tr></tbody>
       </table>
     </div>
-
+    
     <p class="section-label">⚠ 소방점검 지적사항 (2026.04.14)</p>
     <div class="fire-grid">
       <div class="fire-card">
         <div class="floor">13층</div>
-        <div class="room">13층 공용</div>
-        <ul class="items">
-          <li>비상계단 하문 (댐퍼전선)</li>
-        </ul>
+        <div class="room">1302호</div>
+        <ul class="items"><li>비상계단 하문(댐퍼전선)</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">10층</div>
         <div class="room">101a호</div>
-        <ul class="items">
-          <li>비상계단 의자</li>
-          <li>각종 박스 (댐퍼전선)</li>
-          <li>주계단 하문 (댐퍼전선)</li>
-        </ul>
+        <ul class="items"><li>비상계단 의자</li><li>각종 박스(댐퍼전선)</li><li>주계단 하문(댐퍼전선)</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">11층</div>
         <div class="room">901호</div>
-        <ul class="items">
-          <li>비상계단 자동문이어 (댐퍼전선)</li>
-        </ul>
+        <ul class="items"><li>비상계단 자동문이어(댐퍼전선)</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">8층</div>
         <div class="room">802호</div>
-        <ul class="items">
-          <li>주계단 매여있는 식터기 및 쓰레기통 (댐퍼전선)</li>
-        </ul>
+        <ul class="items"><li>주계단 매여있는 식터기 및 쓰레기통(댐퍼전선)</li></ul>
       </div>
       <div class="fire-card urgent">
         <div class="floor">7층 ⚠ 빠른 개선 요망</div>
         <div class="room">702호</div>
-        <ul class="items">
-          <li>주계단 계단창 유리음 및 입간판 및 랜드등</li>
-          <li>주계단 선풍기 外 (댐퍼전선)</li>
-          <li>비상계단 각종집기 (댐퍼전선)</li>
-          <li>비상계단 계단창 선풍기 컴퓨터 등</li>
-        </ul>
+        <ul class="items"><li>주계단 계단창 유리음 및 입간판 및 랜드등</li><li>주계단 선풍기 外(댐퍼전선)</li><li>비상계단 각종집기(댐퍼전선)</li><li>비상계단 계단창 선풍기 컴퓨터 등</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">6층</div>
         <div class="room">601호</div>
-        <ul class="items">
-          <li>비상계단 닥자</li>
-          <li>비상계단 매여진밧 길기 (댐퍼전선)</li>
-          <li>주계단 위아 선반등 (댐퍼전선)</li>
-          <li>주계단창 페인트</li>
-        </ul>
+        <ul class="items"><li>비상계단 닥자</li><li>비상계단 매여진밧 길기(댐퍼전선)</li><li>주계단 위아 선반등(댐퍼전선)</li><li>주계단창 페인트</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">5층</div>
         <div class="room">501호</div>
-        <ul class="items">
-          <li>주계단 유리 (댐퍼전선)</li>
-          <li>비상계단 우산꽂이 등 (댐퍼전선)</li>
-          <li>비상계단 하방 의자 등</li>
-        </ul>
+        <ul class="items"><li>주계단 유리(댐퍼전선)</li><li>비상계단 우산꽂이 등(댐퍼전선)</li><li>비상계단 하방 의자 등</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">4층</div>
         <div class="room">401호</div>
-        <ul class="items">
-          <li>비상계단창 파라솔, 탁자</li>
-          <li>비상계단 슬로가방·쓰레기통 (댐퍼전선)</li>
-        </ul>
+        <ul class="items"><li>비상계단창 파라솔, 탁자</li><li>비상계단 슬로가방·쓰레기통(댐퍼전선)</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">4층</div>
         <div class="room">402호</div>
-        <ul class="items">
-          <li>주계단 탁자 박스 (댐퍼전선)</li>
-        </ul>
+        <ul class="items"><li>주계단 탁자 박스(댐퍼전선)</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">3층</div>
         <div class="room">302호</div>
-        <ul class="items">
-          <li>주계단창 에어컨 실외기</li>
-          <li>주계단 슈박스·슬데·기둥통 (댐퍼전선)</li>
-          <li>비상계단 탁자·받쳐대 (댐퍼전선)</li>
-        </ul>
+        <ul class="items"><li>주계단창 에어컨 실외기</li><li>주계단 슈박스·슬데·기둥통(댐퍼전선)</li><li>비상계단 탁자·받쳐대(댐퍼전선)</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">2층</div>
         <div class="room">201호</div>
-        <ul class="items">
-          <li>비상계단 화분 등 (댐퍼전선)</li>
-        </ul>
-      </div>
-    </div>
+        <ul class="items"><li>비상계단 화분 등(댐퍼전선)</li></ul>
+      </div></div>
+    
 
     <div style="margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:0.72rem;color:var(--text3);">
-      레이크펄스 빌딩 관리사무소 &nbsp;·&nbsp; 2026년 5월 &nbsp;·&nbsp; 최종 업데이트: 2026.05.31
+      레이크펄스 빌딩 관리사무소 &nbsp;·&nbsp; 2026년 5월 &nbsp;·&nbsp; 상태: 작성완료 &nbsp;·&nbsp; 최종 업데이트: 2026-05-31
     </div>
   </div><!-- /panel-5 -->
 
-  <!-- 6~12월 빈 상태 -->
   <div class="month-panel active" id="panel-6">
 
     <p class="section-label">요약</p>
@@ -678,220 +444,149 @@
       <div class="kpi positive">
         <div class="label">안전계좌(관리비) 6/30 잔액</div>
         <div class="value">10,964,208<span class="unit">원</span></div>
-      </div>
-    </div>
-
+      </div></div>
+    
     <div style="margin:14px 0 0;padding:12px 16px;border:1px solid var(--danger);border-radius:8px;background:rgba(255,107,107,0.06);font-size:0.78rem;color:var(--text2);line-height:1.6;">
-      ⚠ 6월 자료는 "06.15 결재예정"과 "06.30 결재예정" 두 묶음으로 작성되어 있습니다. 5월분 전기료(16,935,240원) 등 17,745,050원이 6월 말 기준 미납으로 표시되어 있어, 실제 출금 여부는 통장 내역으로 재확인이 필요합니다.
+      ⚠ 6월 자료는 06.15 결재예정과 06.30 결재예정 두 묶음으로 작성되어 있습니다. 5월분 전기료(16,935,240원) 등 17,745,050원이 6월 말 기준 미납으로 표시되어 있어, 실제 출금 여부는 통장 거래내역으로 재확인이 필요합니다.
     </div>
-
-    <p class="section-label">1. 부림 위탁관리비 지출 결의서 (26'06월분)</p>
-    <div class="kpi-row" style="margin-bottom:6px;">
-      <div class="kpi negative"><div class="label">당월 청구금액</div><div class="value">17,755,264<span class="unit">원</span></div></div>
-    </div>
+    
+    
+    <p class="section-label">1. 부림 위탁관리비 — 도급비</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>내역</th><th>금액</th><th>거래처 / 계좌</th></tr></thead>
-        <tbody>
-          <tr><td colspan="3" style="font-weight:700;background:var(--surface2);text-align:left;font-family:'Noto Sans KR',sans-serif;">1. 도급비 — 14,937,264</td></tr>
-          <tr><td>도급인건비</td><td>13,169,140</td><td>(주)부림 / 농협 301-3867-7091-81</td></tr>
-          <tr><td>부가세 10%</td><td>1,316,914</td><td>—</td></tr>
-          <tr><td>통합보험료(사용자부담분)</td><td>451,210</td><td>—</td></tr>
-          <tr class="total"><td>소계</td><td>14,937,264</td><td></td></tr>
-          <tr><td colspan="3" style="font-weight:700;background:var(--surface2);text-align:left;font-family:'Noto Sans KR',sans-serif;">2. 안전관리 지급수수료 — 2,818,000</td></tr>
-          <tr><td>전기안전관리비</td><td>660,000</td><td>(주)이엠에이코리아</td></tr>
-          <tr><td>소방안전관리비</td><td>363,000</td><td>(주)협동소방</td></tr>
-          <tr><td>승강기유지비</td><td>605,000</td><td>티케이</td></tr>
-          <tr><td>기계식주차유지보수비</td><td>880,000</td><td>금아기전</td></tr>
-          <tr><td>소방안전관리자 수당</td><td>100,000</td><td>반장 황재준</td></tr>
-          <tr><td>기계설비유지관리자선임비</td><td>100,000</td><td>반장 신동국</td></tr>
-          <tr><td>정보통신설비유지관리자선임비</td><td>—</td><td>26년 7월부터 시행</td></tr>
-          <tr><td>전산수수료</td><td>110,000</td><td>에이.엠.아이</td></tr>
-          <tr class="total"><td>소계</td><td>2,818,000</td><td></td></tr>
-          <tr class="total"><td>당월 청구 합계</td><td>17,755,264</td><td></td></tr>
-        </tbody>
+        <tbody><tr><td>도급인건비</td><td>13,169,140</td><td>(주)부림 / 농협 301-3867-7091-81</td></tr><tr><td>부가세 10%</td><td>1,316,914</td><td>—</td></tr><tr><td>통합보험료(사용자부담분)</td><td>451,210</td><td>—</td></tr><tr class="total"><td>소계</td><td>14,937,264</td><td></td></tr></tbody>
       </table>
-    </div>
-    <div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">도급계약서 계약금액 14,486,054원(부가세포함) 대비 실청구액 14,937,264원 — 통합보험료 별도 청구분 확인 필요</div>
-
-    <p class="section-label">2. 관리단대표 지출과 집행 결의서 (05)</p>
-    <div class="kpi-row" style="margin-bottom:6px;">
-      <div class="kpi negative"><div class="label">합계</div><div class="value">21,208,310<span class="unit">원</span></div></div>
-    </div>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">도급계약서 계약금액 14,486,054원(부가세포함) 대비 실청구액 14,937,264원 — 통합보험료 별도 청구분 확인 필요</div>
+    <p class="section-label">1. 부림 위탁관리비 — 안전관리 지급수수료</p>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>지출일</th><th>지출내역</th><th>거래처</th><th>청구금액</th><th>구분</th></tr></thead>
-        <tbody>
-          <tr><td>06.30</td><td>관리단대표 업무 위임 수수료(최종)</td><td>(주)부림</td><td>1,100,000</td><td>수선충당금</td></tr>
-          <tr><td>06.22</td><td>공기청정기 사용료</td><td>교원웰스</td><td>25,900</td><td>관리비 계좌</td></tr>
-          <tr><td>07.05</td><td>주차장 공사비 24회 분할(7회차)</td><td>관리단 전대표</td><td>1,650,000</td><td>수선비(주차수입)</td></tr>
-          <tr><td>06.30</td><td>관리단대표 판공비</td><td>관리단 회장</td><td>200,000</td><td>관리비 계좌</td></tr>
-          <tr><td>07.05</td><td>태림 위탁관리비 잔여분</td><td>(주)태림</td><td>11,000,000</td><td>관리비 계좌</td></tr>
-          <tr><td>06.30</td><td>한전 부족납입금 차입금 반환</td><td>대표 표경희</td><td>4,000,000</td><td>관리비 계좌</td></tr>
-          <tr><td>06.30</td><td>201호 이바돔 특별 송달료</td><td>법무사 김성호</td><td>21,500</td><td>관리비 계좌</td></tr>
-          <tr><td>06.18</td><td>소화전 누수 교체 공사비</td><td>가나누수 담지</td><td>3,000,000</td><td>수선충당금</td></tr>
-          <tr><td>06.18</td><td>5층 여화장실 다용도 행거 구입비</td><td>쿠팡</td><td>8,910</td><td>수선비</td></tr>
-          <tr><td>06.18</td><td>소화전 누수 교체 소장 특근비</td><td>소장 박재덕</td><td>102,000</td><td>관리비 계좌</td></tr>
-          <tr><td>06.30</td><td>소방담당 수당</td><td>반장 황재준</td><td>100,000</td><td>관리비 계좌</td></tr>
-          <tr class="total"><td colspan="3">합계</td><td>21,208,310</td><td></td></tr>
-        </tbody>
+        <thead><tr><th>내역</th><th>금액</th><th>거래처</th></tr></thead>
+        <tbody><tr><td>전기안전관리비</td><td>660,000</td><td>(주)이엠에이코리아</td></tr><tr><td>소방안전관리비</td><td>363,000</td><td>(주)협동소방</td></tr><tr><td>승강기유지비</td><td>605,000</td><td>티케이</td></tr><tr><td>기계식주차유지보수비</td><td>880,000</td><td>금아기전</td></tr><tr><td>소방안전관리자 수당</td><td>100,000</td><td>반장 황재준</td></tr><tr><td>기계설비유지관리자선임비</td><td>100,000</td><td>반장 신동국</td></tr><tr><td>정보통신설비유지관리자선임비</td><td>—</td><td>26년 7월부터 시행</td></tr><tr><td>전산수수료</td><td>110,000</td><td>에이.엠.아이</td></tr><tr class="total"><td>소계</td><td>2,818,000</td><td></td></tr><tr class="total" style="opacity:0.85;"><td>당월 청구 합계 (도급비+수수료)</td><td>17,755,264</td><td></td></tr></tbody>
       </table>
     </div>
-    <div class="table-wrap" style="margin-top:8px;">
+    <p class="section-label">2. 관리단대표 지출과 집행 결의서 (05)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지출일</th><th>내역</th><th>거래처</th><th>금액</th><th>구분</th></tr></thead>
+        <tbody><tr><td>06.30</td><td>관리단대표 업무 위임 수수료(최종)</td><td>(주)부림</td><td>1,100,000</td><td>수선충당금</td></tr><tr><td>06.22</td><td>공기청정기 사용료</td><td>교원웰스</td><td>25,900</td><td>관리비 계좌</td></tr><tr><td>07.05</td><td>주차장 공사비 24회 분할(7회차)</td><td>관리단 전대표</td><td>1,650,000</td><td>수선비(주차수입)</td></tr><tr><td>06.30</td><td>관리단대표 판공비</td><td>관리단 회장</td><td>200,000</td><td>관리비 계좌</td></tr><tr><td>07.05</td><td>태림 위탁관리비 잔여분</td><td>(주)태림</td><td>11,000,000</td><td>관리비 계좌</td></tr><tr><td>06.30</td><td>한전 부족납입금 차입금 반환</td><td>대표 표경희</td><td>4,000,000</td><td>관리비 계좌</td></tr><tr><td>06.30</td><td>201호 이바돔 특별 송달료</td><td>법무사 김성호</td><td>21,500</td><td>관리비 계좌</td></tr><tr><td>06.18</td><td>소화전 누수 교체 공사비</td><td>가나누수 담지</td><td>3,000,000</td><td>수선충당금</td></tr><tr><td>06.18</td><td>5층 여화장실 다용도 행거 구입비</td><td>쿠팡</td><td>8,910</td><td>수선비</td></tr><tr><td>06.18</td><td>소화전 누수 교체 소장 특근비</td><td>소장 박재덕</td><td>102,000</td><td>관리비 계좌</td></tr><tr><td>06.30</td><td>소방담당 수당</td><td>반장 황재준</td><td>100,000</td><td>관리비 계좌</td></tr><tr class="total"><td>합계</td><td></td><td></td><td>21,208,310</td><td></td></tr></tbody>
+      </table>
+    </div>
+    <p class="section-label">2-1. 지출 구분별 내역</p>
+    <div class="table-wrap">
       <table>
         <thead><tr><th>시설수선비</th><th>소모품비</th><th>장기수선충당금</th><th>지출합계</th></tr></thead>
-        <tbody>
-          <tr class="total"><td>1,658,910</td><td>15,449,400</td><td>4,100,000</td><td>21,208,310</td></tr>
-        </tbody>
+        <tbody><tr class="total"><td>1,658,910</td><td>15,449,400</td><td>4,100,000</td><td>21,208,310</td></tr></tbody>
       </table>
     </div>
-
     <p class="section-label">3. 공과금 지출 결의서 (04)</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>지출내역</th><th>청구금액</th><th>납기일</th><th>거래처</th><th>비고</th></tr></thead>
-        <tbody>
-          <tr><td>6월분 상·하수도 사용료</td><td>3,700,270</td><td>26.06.30</td><td>창원시</td><td>26.04.15~26.05.14 사용분</td></tr>
-          <tr><td>6월분 일반전화료</td><td>8,140</td><td>26.05.26</td><td>(주)케이티</td><td>26.04.01~26.04.30 사용분</td></tr>
-          <tr><td>6월분 인터넷 사용료</td><td>23,100</td><td>26.05.31</td><td>(주)케이티</td><td>26.04.01~26.04.30 사용분</td></tr>
-          <tr><td>6월분 CCTV 사용료</td><td>126,500</td><td>26.05.23</td><td>에스원</td><td>—</td></tr>
-          <tr class="total"><td>합계</td><td>3,858,010</td><td colspan="3"></td></tr>
-        </tbody>
+        <tbody><tr><td>6월분 상·하수도 사용료</td><td>3,700,270</td><td>26.06.30</td><td>창원시</td><td>26.04.15~26.05.14 사용분</td></tr><tr><td>6월분 일반전화료</td><td>8,140</td><td>26.05.26</td><td>(주)케이티</td><td>26.04.01~26.04.30 사용분</td></tr><tr><td>6월분 인터넷 사용료</td><td>23,100</td><td>26.05.31</td><td>(주)케이티</td><td>26.04.01~26.04.30 사용분</td></tr><tr><td>6월분 CCTV 사용료</td><td>126,500</td><td>26.05.23</td><td>에스원</td><td>—</td></tr><tr class="total"><td>합계</td><td>3,858,010</td><td></td><td></td><td></td></tr></tbody>
       </table>
     </div>
-
-    <p class="section-label">4. 06월 15일 결재 예정 목록 (누계 18,058,490 / 미납 17,745,050)</p>
+    <p class="section-label">4. 06월 15일 결재 예정 목록 (미납 17,745,050)</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>품목</th><th>금액</th><th>비고</th></tr></thead>
-        <tbody>
-          <tr><td>5월분 전기요금</td><td>16,935,240</td><td class="neg">전체청구액 38,974,390 중 일부 / 미납</td></tr>
-          <tr><td>SK텔레콤 카드단말기 사용료</td><td>11,000</td><td>자동이체</td></tr>
-          <tr><td>SK텔레콤 승강기 비상전화 통신비</td><td>3,850</td><td>—</td></tr>
-          <tr><td>청소용품 구입비</td><td>120,450</td><td>에스엠크린 카드결재</td></tr>
-          <tr><td>종량제봉투 & 커피 구입비</td><td>91,800</td><td>C&U 카드결재</td></tr>
-          <tr><td>상가 방역비</td><td>200,000</td><td>(주)진성개발</td></tr>
-          <tr><td>생수 구입비</td><td>26,400</td><td>카드결재</td></tr>
-          <tr><td>지하 오수배관 엘보 파손 수리</td><td>100,000</td><td>창원설비사(대체입금)</td></tr>
-          <tr><td>201호 지급명령 보수비</td><td>503,000</td><td>법무사 김성호(김세준)</td></tr>
-          <tr><td>요석 제거제 구입비</td><td>23,150</td><td>쿠팡 / 소장 박재덕</td></tr>
-          <tr><td>일회용 방호복 구입비</td><td>7,200</td><td>쿠팡 / 소장 박재덕</td></tr>
-          <tr><td>물 분사기 호스 구입비</td><td>29,800</td><td>쿠팡 / 소장 박재덕</td></tr>
-          <tr><td>고무 오링 셋트 구입비</td><td>6,600</td><td>쿠팡 / 소장 박재덕</td></tr>
-          <tr class="total"><td>계 (누계)</td><td>18,058,490</td><td class="neg">미납 17,745,050</td></tr>
-        </tbody>
+        <tbody><tr><td>5월분 전기요금</td><td>16,935,240</td><td>전체청구액 38,974,390 중 일부 / 미납</td></tr><tr><td>SK텔레콤 카드단말기 사용료</td><td>11,000</td><td>자동이체</td></tr><tr><td>SK텔레콤 승강기 비상전화 통신비</td><td>3,850</td><td>—</td></tr><tr><td>청소용품 구입비</td><td>120,450</td><td>에스엠크린 카드결재</td></tr><tr><td>종량제봉투 &amp; 커피 구입비</td><td>91,800</td><td>C&amp;U 카드결재</td></tr><tr><td>상가 방역비</td><td>200,000</td><td>(주)진성개발</td></tr><tr><td>생수 구입비</td><td>26,400</td><td>카드결재</td></tr><tr><td>지하 오수배관 엘보 파손 수리</td><td>100,000</td><td>창원설비사(대체입금)</td></tr><tr><td>201호 지급명령 보수비</td><td>503,000</td><td>법무사 김성호(김세준)</td></tr><tr><td>요석 제거제 구입비</td><td>23,150</td><td>쿠팡 / 소장 박재덕</td></tr><tr><td>일회용 방호복 구입비</td><td>7,200</td><td>쿠팡 / 소장 박재덕</td></tr><tr><td>물 분사기 호스 구입비</td><td>29,800</td><td>쿠팡 / 소장 박재덕</td></tr><tr><td>고무 오링 셋트 구입비</td><td>6,600</td><td>쿠팡 / 소장 박재덕</td></tr><tr class="total"><td>계 (누계 18,058,490 / 미납 17,745,050)</td><td>18,058,490</td><td></td></tr></tbody>
       </table>
     </div>
-
     <p class="section-label">5. 소화전 누수 수선 공사 (가나누수, 안상순 대표)</p>
     <div class="table-wrap">
-      <table>
-        <tbody>
-          <tr><td>공사일자</td><td>2026.06.18 ~ 06.19 (1박2일)</td></tr>
-          <tr><td>공사내용</td><td>CNU 수도밸브 손화전 부식 누수공사 (소화전 교체)</td></tr>
-          <tr><td>공사금액</td><td>3,000,000원 (수용가 무료가 60만원 적용분 별도 표기)</td></tr>
-          <tr><td>입금계좌</td><td>농협 504-10-620926-9 (안상순)</td></tr>
-          <tr><td class="neg">전자세금계산서 금액</td><td class="neg">1,000,000원 — 결의서상 3,000,000원과 차이, 확인 필요</td></tr>
-        </tbody>
-      </table>
+      <table><tbody><tr><td>공사일자</td><td>2026.06.18 ~ 06.19 (1박2일)</td></tr><tr><td>공사내용</td><td>CNU 수도밸브 손화전 부식 누수공사 (소화전 교체)</td></tr><tr><td>공사금액</td><td>3,000,000원 (수용가 무료가 60만원 적용분 별도 표기)</td></tr><tr><td>입금계좌</td><td>농협 504-10-620926-9 (안상순)</td></tr><tr><td>⚠ 전자세금계산서 금액</td><td>1,000,000원 — 결의서상 3,000,000원과 차이, 확인 필요</td></tr></tbody></table>
     </div>
-
-    <p class="section-label">6. 안전계좌(관리비) 거래내역 (2026.05.30~06.30)</p>
-    <div class="kpi-row" style="margin-bottom:6px;">
-      <div class="kpi positive"><div class="label">6/30 현재 잔액</div><div class="value">10,964,208<span class="unit">원</span></div></div>
-    </div>
+    <p class="section-label">6. 안전계좌(관리비) 거래내역 (2026.05.30~06.30, 발췌)</p>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>거래일자</th><th>거래종류</th><th>출금금액</th><th>입금금액</th><th>거래후잔액</th><th>비고</th></tr></thead>
-        <tbody>
-          <tr><td>06.30</td><td>CD공동</td><td>0</td><td>982,900</td><td>10,964,208</td><td>신한조영수</td></tr>
-          <tr><td>06.30</td><td>대체</td><td>0</td><td>4,980</td><td>9,981,308</td><td>KB1172575</td></tr>
-          <tr><td>06.30</td><td>대체</td><td>0</td><td>4,993</td><td>9,976,328</td><td>NH175534</td></tr>
-          <tr><td>06.29</td><td>인터넷</td><td>0</td><td>463,710</td><td>9,971,335</td><td>농협이진이</td></tr>
-          <tr><td>06.29</td><td>인터넷</td><td>0</td><td>621,310</td><td>9,507,625</td><td>농협이진이</td></tr>
-          <tr><td>06.29</td><td>대체</td><td>0</td><td>1,074,080</td><td>8,886,315</td><td>세인레이크</td></tr>
-          <tr><td>06.29</td><td>자동이체</td><td>25,900</td><td>0</td><td>7,812,235</td><td>교원청정기</td></tr>
-          <tr><td>06.28</td><td>예금이자</td><td>0</td><td>230</td><td>7,838,135</td><td>이자 260</td></tr>
-          <tr><td>06.27</td><td>모바일</td><td>0</td><td>454,680</td><td>7,837,905</td><td>경남위드비</td></tr>
-          <tr><td>06.26</td><td>인터넷</td><td>0</td><td>454,390</td><td>7,383,225</td><td>하나배재구</td></tr>
-          <tr><td>06.26</td><td>인터넷</td><td>0</td><td>575,090</td><td>6,928,835</td><td>농협김홍준</td></tr>
-          <tr><td>06.25</td><td>인터넷</td><td>0</td><td>604,080</td><td>6,353,745</td><td>경남한서건</td></tr>
-          <tr><td>06.25</td><td>모바일</td><td>0</td><td>1,279,010</td><td>5,749,665</td><td>국민정영훈</td></tr>
-          <tr><td>06.24</td><td>인터넷</td><td>0</td><td>2,003,490</td><td>4,470,655</td><td>기업주식회</td></tr>
-          <tr><td>06.23</td><td>인터넷</td><td>0</td><td>606,640</td><td>2,467,165</td><td>농협강치윤</td></tr>
-        </tbody>
+        <thead><tr><th>거래일자</th><th>거래종류</th><th>출금</th><th>입금</th><th>거래후잔액</th><th>비고</th></tr></thead>
+        <tbody><tr><td>06.30</td><td>CD공동</td><td>—</td><td>982,900</td><td>10,964,208</td><td>신한조영수</td></tr><tr><td>06.30</td><td>대체</td><td>—</td><td>4,980</td><td>9,981,308</td><td>KB1172575</td></tr><tr><td>06.30</td><td>대체</td><td>—</td><td>4,993</td><td>9,976,328</td><td>NH175534</td></tr><tr><td>06.29</td><td>인터넷</td><td>—</td><td>463,710</td><td>9,971,335</td><td>농협이진이</td></tr><tr><td>06.29</td><td>인터넷</td><td>—</td><td>621,310</td><td>9,507,625</td><td>농협이진이</td></tr><tr><td>06.29</td><td>대체</td><td>—</td><td>1,074,080</td><td>8,886,315</td><td>세인레이크</td></tr><tr><td>06.29</td><td>자동이체</td><td>25,900</td><td>—</td><td>7,812,235</td><td>교원청정기</td></tr><tr><td>06.28</td><td>예금이자</td><td>—</td><td>230</td><td>7,838,135</td><td>이자 260</td></tr><tr><td>06.27</td><td>모바일</td><td>—</td><td>454,680</td><td>7,837,905</td><td>경남위드비</td></tr><tr><td>06.26</td><td>인터넷</td><td>—</td><td>454,390</td><td>7,383,225</td><td>하나배재구</td></tr><tr><td>06.26</td><td>인터넷</td><td>—</td><td>575,090</td><td>6,928,835</td><td>농협김홍준</td></tr><tr><td>06.25</td><td>인터넷</td><td>—</td><td>604,080</td><td>6,353,745</td><td>경남한서건</td></tr><tr><td>06.25</td><td>모바일</td><td>—</td><td>1,279,010</td><td>5,749,665</td><td>국민정영훈</td></tr><tr><td>06.24</td><td>인터넷</td><td>—</td><td>2,003,490</td><td>4,470,655</td><td>기업주식회</td></tr><tr><td>06.23</td><td>인터넷</td><td>—</td><td>606,640</td><td>2,467,165</td><td>농협강치윤</td></tr></tbody>
       </table>
     </div>
-    <div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">* 최근거래순 발췌이며 안전계좌 거래내역 전체가 아닌 일부입니다. 전체 검증은 원본 조회 화면을 참조하세요.</div>
-
+    
+    
     <p class="section-label">⚠ 시사점 및 확인 필요 사항</p>
     <div class="fire-grid">
       <div class="fire-card urgent">
         <div class="floor">지출 급증</div>
         <div class="room">6월 결재누계 60,880,074원</div>
-        <ul class="items">
-          <li>5월 지출(37,837,950) 대비 약 1.6배</li>
-          <li>태림 잔여정산 11,000,000 / 한전 차입금반환 4,000,000 / 누수공사 3,000,000 / 위임수수료 최종분 1,100,000 등 일시성 대형지출 집중</li>
-        </ul>
+        <ul class="items"><li>5월 지출(37,837,950) 대비 약 1.6배</li><li>태림 잔여정산 11,000,000 / 한전 차입금반환 4,000,000 / 누수공사 3,000,000 / 위임수수료 최종분 1,100,000 등 일시성 대형지출 집중</li></ul>
       </div>
       <div class="fire-card urgent">
         <div class="floor">미납 이월</div>
         <div class="room">17,745,050원</div>
-        <ul class="items">
-          <li>5월분 전기료(16,935,240) 등이 6월 말 기준 미납 표기</li>
-          <li>실제 통장 출금 여부 재확인 필요</li>
-        </ul>
+        <ul class="items"><li>5월분 전기료(16,935,240) 등이 6월 말 기준 미납 표기</li><li>실제 통장 출금 여부 재확인 필요</li></ul>
       </div>
       <div class="fire-card urgent">
         <div class="floor">금액 불일치</div>
         <div class="room">소화전 누수공사</div>
-        <ul class="items">
-          <li>지출결의서 3,000,000원 vs 전자세금계산서 1,000,000원</li>
-          <li>차액 2,000,000원 처리내역 확인 필요</li>
-        </ul>
+        <ul class="items"><li>지출결의서 3,000,000원 vs 전자세금계산서 1,000,000원</li><li>차액 2,000,000원 처리내역 확인 필요</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">계약 대비 초과</div>
         <div class="room">도급비 청구</div>
-        <ul class="items">
-          <li>계약금액 14,486,054 vs 청구액 14,937,264</li>
-          <li>차액 451,210(통합보험료) 계약서 반영 여부 확인</li>
-        </ul>
+        <ul class="items"><li>계약금액 14,486,054 vs 청구액 14,937,264</li><li>차액 451,210(통합보험료) 계약서 반영 여부 확인</li></ul>
       </div>
       <div class="fire-card">
         <div class="floor">위탁관리 전환</div>
         <div class="room">태림 → 부림</div>
-        <ul class="items">
-          <li>6월 도급비는 부림 청구분, 태림 잔여정산 11,000,000 별도 지급</li>
-          <li>전환 정산 완료 여부 및 중복 비용 점검 권장</li>
-        </ul>
-      </div>
-    </div>
+        <ul class="items"><li>6월 도급비는 부림 청구분, 태림 잔여정산 11,000,000 별도 지급</li><li>전환 정산 완료 여부 및 중복 비용 점검 권장</li></ul>
+      </div></div>
 
     <div style="margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:0.72rem;color:var(--text3);">
-      레이크펄스 빌딩 관리사무소 &nbsp;·&nbsp; 2026년 6월 &nbsp;·&nbsp; 최종 업데이트: 2026.06.30
+      레이크펄스 빌딩 관리사무소 &nbsp;·&nbsp; 2026년 6월 &nbsp;·&nbsp; 상태: 검토중 &nbsp;·&nbsp; 최종 업데이트: 2026-06-30
     </div>
   </div><!-- /panel-6 -->
+
   <div class="month-panel" id="panel-7">
-    <div class="empty-state"><div class="icon">📂</div><p>7월 자료가 아직 등록되지 않았습니다.</p><code>id="panel-7" 섹션에 데이터를 입력하세요</code></div>
-  </div>
-  <div class="month-panel" id="panel-8">
-    <div class="empty-state"><div class="icon">📂</div><p>8월 자료가 아직 등록되지 않았습니다.</p><code>id="panel-8" 섹션에 데이터를 입력하세요</code></div>
-  </div>
-  <div class="month-panel" id="panel-9">
-    <div class="empty-state"><div class="icon">📂</div><p>9월 자료가 아직 등록되지 않았습니다.</p><code>id="panel-9" 섹션에 데이터를 입력하세요</code></div>
-  </div>
-  <div class="month-panel" id="panel-10">
-    <div class="empty-state"><div class="icon">📂</div><p>10월 자료가 아직 등록되지 않았습니다.</p><code>id="panel-10" 섹션에 데이터를 입력하세요</code></div>
-  </div>
-  <div class="month-panel" id="panel-11">
-    <div class="empty-state"><div class="icon">📂</div><p>11월 자료가 아직 등록되지 않았습니다.</p><code>id="panel-11" 섹션에 데이터를 입력하세요</code></div>
-  </div>
-  <div class="month-panel" id="panel-12">
-    <div class="empty-state"><div class="icon">📂</div><p>12월 자료가 아직 등록되지 않았습니다.</p><code>id="panel-12" 섹션에 데이터를 입력하세요</code></div>
+    <div class="empty-state">
+      <div class="icon">📂</div>
+      <p>7월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-07.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-07.json</code>
+    </div>
   </div>
 
-</div><!-- /content -->
+  <div class="month-panel" id="panel-8">
+    <div class="empty-state">
+      <div class="icon">📂</div>
+      <p>8월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-08.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-08.json</code>
+    </div>
+  </div>
+
+  <div class="month-panel" id="panel-9">
+    <div class="empty-state">
+      <div class="icon">📂</div>
+      <p>9월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-09.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-09.json</code>
+    </div>
+  </div>
+
+  <div class="month-panel" id="panel-10">
+    <div class="empty-state">
+      <div class="icon">📂</div>
+      <p>10월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-10.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-10.json</code>
+    </div>
+  </div>
+
+  <div class="month-panel" id="panel-11">
+    <div class="empty-state">
+      <div class="icon">📂</div>
+      <p>11월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-11.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-11.json</code>
+    </div>
+  </div>
+
+  <div class="month-panel" id="panel-12">
+    <div class="empty-state">
+      <div class="icon">📂</div>
+      <p>12월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-12.json 파일을 추가하면 자동으로 채워집니다.</p>
+      <code>data/2026-12.json</code>
+    </div>
+  </div>
+</div>
 
 <script>
   const buttons = document.querySelectorAll('.month-btn');
@@ -903,7 +598,8 @@
       buttons.forEach(b => b.classList.remove('active'));
       panels.forEach(p  => p.classList.remove('active'));
       btn.classList.add('active');
-      document.getElementById('panel-' + m).classList.add('active');
+      const panel = document.getElementById('panel-' + m);
+      if (panel) panel.classList.add('active');
     });
   });
 </script>
