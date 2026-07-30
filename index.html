@@ -213,8 +213,8 @@
   <button class="month-btn" data-month="3">3월</button>
   <button class="month-btn" data-month="4">4월</button>
   <button class="month-btn has-data" data-month="5">5월</button>
-  <button class="month-btn has-data active" data-month="6">6월</button>
-  <button class="month-btn" data-month="7">7월</button>
+  <button class="month-btn has-data" data-month="6">6월</button>
+  <button class="month-btn has-data active" data-month="7">7월</button>
   <button class="month-btn" data-month="8">8월</button>
   <button class="month-btn" data-month="9">9월</button>
   <button class="month-btn" data-month="10">10월</button>
@@ -425,7 +425,7 @@
     </div>
   </div><!-- /panel-5 -->
 
-  <div class="month-panel active" id="panel-6">
+  <div class="month-panel" id="panel-6">
 
     <p class="section-label">요약</p>
     <div class="kpi-row">
@@ -575,13 +575,176 @@
     </div>
   </div><!-- /panel-6 -->
 
-  <div class="month-panel" id="panel-7">
-    <div class="empty-state">
-      <div class="icon">📂</div>
-      <p>7월 자료가 아직 등록되지 않았습니다.<br>data/YYYY-07.json 파일을 추가하면 자동으로 채워집니다.</p>
-      <code>data/2026-07.json</code>
+  <div class="month-panel active" id="panel-7">
+
+    <p class="section-label">요약</p>
+    <div class="kpi-row">
+      <div class="kpi accent">
+        <div class="label">안전계좌 잔액 (7/30)</div>
+        <div class="value">11,564,435<span class="unit">원</span></div>
+      </div>
+      <div class="kpi negative">
+        <div class="label">7월 결재/미납 예정 누계</div>
+        <div class="value">52,297,444<span class="unit">원</span></div>
+      </div>
+      <div class="kpi negative">
+        <div class="label">7월 미납 이월액</div>
+        <div class="value">26,976,414<span class="unit">원</span></div>
+      </div>
+      <div class="kpi negative">
+        <div class="label">부림 차용금 잔금</div>
+        <div class="value">57,712,264<span class="unit">원</span></div>
+      </div></div>
+    
+    <div style="margin:14px 0 0;padding:12px 16px;border:1px solid var(--danger);border-radius:8px;background:rgba(255,107,107,0.06);font-size:0.78rem;color:var(--text2);line-height:1.6;">
+      ⚠ 7월 미납 26,976,414원(전기료 잔여 19,039,150 + 부림 도급비 미지급 7,937,264)이 8월로 이월. 태림 잔여분이 중간집계 11,000,000에서 7,000,000으로 조정됨 — 근거 확인 필요. 6월분 상하수도료 3,059,320으로 확정(누수보상 640,950 적용).
     </div>
-  </div>
+    
+    <p class="section-label">7월 법정 항목별 결재 합계 (7/31 기준)</p>
+    <div class="bar-chart" style="margin-bottom:24px;">
+      <div class="bar-row">
+        <span class="bar-label">8호. 위탁관리수수료</span>
+        <div class="bar-track"><div class="bar-fill" style="width:100.0%"></div></div>
+        <span class="bar-val">21,937,264</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">9호. 전기료</span>
+        <div class="bar-track"><div class="bar-fill alt" style="width:85.8%"></div></div>
+        <span class="bar-val">18,831,070</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">3호. 안전관리비</span>
+        <div class="bar-track"><div class="bar-fill" style="width:12.8%"></div></div>
+        <span class="bar-val">2,818,000</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">10호. 수도료</span>
+        <div class="bar-track"><div class="bar-fill alt" style="width:13.9%"></div></div>
+        <span class="bar-val">3,059,320</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">5호. 수선유지비</span>
+        <div class="bar-track"><div class="bar-fill" style="width:7.9%"></div></div>
+        <span class="bar-val">1,742,500</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">1호. 일반관리비</span>
+        <div class="bar-track"><div class="bar-fill alt" style="width:1.2%"></div></div>
+        <span class="bar-val">268,300</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">기타(차용금상환)</span>
+        <div class="bar-track"><div class="bar-fill" style="width:13.7%"></div></div>
+        <span class="bar-val">3,000,000</span>
+      </div></div>
+    
+    <p class="section-label">법정 14개 항목별 지출 집계 (7월 결재예정표 확정 기준)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>항목</th><th>결재금액</th><th>미납이월</th><th>비고</th></tr></thead>
+        <tbody><tr><td>1호. 일반관리비</td><td>268,300</td><td>—</td><td>통신비·법무비·사무용품</td></tr><tr><td>2호. 청소비</td><td>182,170</td><td>—</td><td>청소용품·종량제봉투</td></tr><tr><td>3호. 경비비(안전관리)</td><td>2,818,000</td><td>—</td><td>전기·소방·기계·승강기·설비</td></tr><tr><td>4호. 복리활동비</td><td>200,000</td><td>—</td><td>관리단 회장 판공비</td></tr><tr><td>5호. 수선유지비</td><td>1,742,500</td><td>—</td><td>에어컨수리+주차장공사8회차</td></tr><tr><td>6호. 냉난방비</td><td>—</td><td>—</td><td>해당없음</td></tr><tr><td>7호. 기타관리비</td><td>258,820</td><td>—</td><td>소모품·공기청정기·수질검사·폐기물처리 포함</td></tr><tr><td>8호. 위탁관리수수료</td><td>21,937,264</td><td>7,937,264</td><td>부림 7,937,264 미지급 / 태림 7,000,000</td></tr><tr><td>9호. 전기료</td><td>18,831,070</td><td>19,039,150</td><td>분납 2회차 / 잔여 2,103,910 별도</td></tr><tr><td>10호. 수도료</td><td>3,059,320</td><td>—</td><td>6월분 상하수도 — 누수보상 640,950 적용</td></tr><tr><td>11호. 가스사용료</td><td>—</td><td>—</td><td>해당없음</td></tr><tr><td>12호. 정화조오물처리</td><td>—</td><td>—</td><td>확인 필요</td></tr><tr><td>13호. 폐기물처리</td><td>15,000</td><td>—</td><td>201호 이바돔 음식물 대형2통 (7호 기타관리비 내 포함)</td></tr><tr><td>14호. 건물보험료</td><td>—</td><td>—</td><td>확인 필요</td></tr><tr><td>기타(차용금상환)</td><td>3,000,000</td><td>—</td><td>한전 부족납입 차용금 반환</td></tr><tr class="total"><td>합계</td><td>52,297,444</td><td>26,976,414</td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">미납이월 26,976,414 = 전기료 잔여 19,039,150 + 부림 도급비 미지급 7,937,264</div>
+    <p class="section-label">결의서(3) — 부림 위탁관리비 (2026.07.31)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>내역</th><th>금액</th><th>거래처/계좌</th></tr></thead>
+        <tbody><tr><td>도급인건비</td><td>13,169,140</td><td>(주)부림 / 농협 301-3867-7091-81</td></tr><tr><td>부가세 10%</td><td>1,316,914</td><td>—</td></tr><tr><td>통합보험료(사용자부담분)</td><td>451,210</td><td>—</td></tr><tr><td>— 도급비 소계 —</td><td>14,937,264</td><td>—</td></tr><tr><td>전기안전관리비</td><td>660,000</td><td>(주)이엠에이코리아 / 농협 808-01-058817</td></tr><tr><td>소방안전관리비</td><td>363,000</td><td>(주)협동소방 / 경남은행 509-07-0197560</td></tr><tr><td>승강기유지비</td><td>605,000</td><td>티케이 / 농협 790-1661-193-5411</td></tr><tr><td>기계식주차유지보수비</td><td>880,000</td><td>금아기전 / 경남은행 544-21-0405902</td></tr><tr><td>소방안전관리자 수당</td><td>100,000</td><td>반장 황재준 / 경남은행 508-22-0052555</td></tr><tr><td>기계설비유지관리자 선임비</td><td>100,000</td><td>반장 신동국 / 농협 808-12-307775</td></tr><tr><td>정보통신설비유지관리자 선임비</td><td>—</td><td>26년 7월부터 시행 (미계상)</td></tr><tr><td>전산수수료</td><td>110,000</td><td>에이엠아이 / 농협 351-0220-3730-63</td></tr><tr><td>— 안전관리수수료 소계 —</td><td>2,818,000</td><td>—</td></tr><tr class="total"><td>당월 청구금액</td><td>17,755,264</td><td></td></tr><tr class="total" style="opacity:0.85;"><td>미지급금</td><td>7,937,264</td><td>기지급 9,818,000 차감</td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">도급계약서 계약금액 14,486,054원(부가세포함) 대비 실청구액 14,937,264원. 차액 451,210(통합보험료) 계약서 반영 여부 확인 필요. 미지급 7,937,264 = 당월청구 17,755,264 - 기지급 9,818,000.</div>
+    <p class="section-label">결의서(04) — 공과금 (2026.07.31)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>내역</th><th>청구금액</th><th>납기일</th><th>거래처</th><th>사용기간</th></tr></thead>
+        <tbody><tr><td>7월분 상·하수도 사용료</td><td>3,059,320</td><td>26.07.31</td><td>창원시</td><td>26.05.15~26.06.14</td></tr><tr><td>7월분 일반전화료</td><td>8,330</td><td>26.07.27</td><td>(주)케이티</td><td>26.06.01~26.06.30</td></tr><tr><td>7월분 인터넷 사용료</td><td>23,520</td><td>26.07.31</td><td>(주)케이티</td><td>26.06.01~26.06.30</td></tr><tr><td>7월분 CCTV 사용료</td><td>126,500</td><td>26.07.23</td><td>에스원</td><td>26.06.01~26.06.30</td></tr><tr class="total"><td>합계</td><td>3,217,670</td><td></td><td></td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">상·하수도 3,059,320 = 기존 예상 3,700,270 대비 640,950 감액 — 6월 소화전 누수 보상 적용 확인</div>
+    <p class="section-label">결의서(05) — 관리단·소장 청구 (2026.07.31)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지출일</th><th>내역</th><th>거래처</th><th>금액</th><th>구분</th></tr></thead>
+        <tbody><tr><td>07.31</td><td>관리단 회장 판공비</td><td>관리단</td><td>200,000</td><td>장기수선충당금</td></tr><tr><td>07.22</td><td>공기청정기 사용료</td><td>교원웰스</td><td>25,900</td><td>관리비 계좌</td></tr><tr><td>08.05</td><td>주차장 공사비 24회 분할(8회차)</td><td>(주)부림 대표</td><td>1,650,000</td><td>수선비(주차수입)</td></tr><tr><td>08.05</td><td>태림 위탁관리비 미지급금</td><td>(주)태림</td><td>7,000,000</td><td>관리비 계좌</td></tr><tr><td>07.15</td><td>한전 부족납입 차용금 반환</td><td>(주)부림 대표</td><td>3,000,000</td><td>관리비 계좌</td></tr><tr><td>07.21</td><td>토너/요석제거제/화장실냄새희석제 구입비</td><td>쿠팡</td><td>53,340</td><td>관리비 계좌</td></tr><tr><td>07.24</td><td>201호 이바돔 음식물폐기비 대형2통</td><td>사설업체</td><td>15,000</td><td>관리비 계좌</td></tr><tr><td>07.31</td><td>수도물 수질검사비</td><td>(주)동진생명연구원</td><td>56,980</td><td>관리비 계좌</td></tr><tr class="total"><td>합계</td><td></td><td></td><td>12,001,220</td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">지출구분별: 시설수선비 1,650,000 / 소모품비 10,151,220 / 장기수선충당금 200,000. 8회차 주차장공사비·태림 미지급금은 08.05 지급 예정으로 7월 결재 후 이월.</div>
+    <p class="section-label">7월 15일 결재 확정 목록</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>순번</th><th>품목</th><th>금액</th><th>법정항목</th><th>비고</th></tr></thead>
+        <tbody><tr><td>1</td><td>6월분 전기요금 (미납 3백만원 추가)</td><td>18,831,070</td><td>9호 전기료</td><td>전체 37,870,220 / 미납잔여 2,103,910</td></tr><tr><td>2</td><td>SK텔레콤 카드단말기 사용료</td><td>11,000</td><td>1호 일반관리비</td><td>SKT 자동이체</td></tr><tr><td>3</td><td>SK텔레콤 승강기 비상전화 통신비</td><td>3,850</td><td>1호 일반관리비</td><td>SKT</td></tr><tr><td>4</td><td>청소용품 구입비(에스엠크린)</td><td>128,370</td><td>2호 청소비</td><td>카드결재</td></tr><tr><td>5</td><td>종량제봉투 구입비(C&amp;U)</td><td>53,800</td><td>2호 청소비</td><td>카드결재</td></tr><tr><td>6</td><td>커피·화장지 구입비(C&amp;U)</td><td>74,600</td><td>7호 기타관리비</td><td>카드결재</td></tr><tr><td>7</td><td>생수 구입비</td><td>33,000</td><td>7호 기타관리비</td><td>카드결재</td></tr><tr><td>8</td><td>미화원 휴게실 에어컨 수리비</td><td>92,500</td><td>5호 수선유지비</td><td>카드결재 / 엘지전자</td></tr><tr><td>9</td><td>201호 미납관리비납부독려 등기우편료</td><td>3,900</td><td>1호 일반관리비</td><td>우체국 / 김정란</td></tr><tr><td>10</td><td>201호 지급명령이의신청 추가인지대</td><td>72,200</td><td>1호 일반관리비</td><td>법무사 김성호(김세준)</td></tr><tr><td>11</td><td>복사용지 구입비(쿠팡)</td><td>19,000</td><td>1호 일반관리비</td><td>소장 박재덕</td></tr><tr class="total"><td>합계</td><td></td><td>19,323,290</td><td></td><td>미납 19,039,150(전기료 잔여)</td></tr></tbody>
+      </table>
+    </div>
+    <p class="section-label">7월 31일 결재 예정 목록 (최종)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>순번</th><th>품목</th><th>금액</th><th>법정항목</th><th>비고</th></tr></thead>
+        <tbody><tr><td>1</td><td>6월분 상·하수도 사용료</td><td>3,059,320</td><td>10호 수도료</td><td>창원시 / 누수보상 640,950 적용</td></tr><tr><td>2</td><td>7월분 부림 도급비</td><td>14,937,264</td><td>8호 위탁관리수수료</td><td>(주)부림 / 미지급 7,937,264</td></tr><tr><td>3</td><td>시설 안전관리비</td><td>2,818,000</td><td>3호·5호 안전관리</td><td>관리단 전대표</td></tr><tr><td>4</td><td>관리단 대표 판공비</td><td>200,000</td><td>4호 복리활동비</td><td>관리단 대표</td></tr><tr><td>5</td><td>인터넷 사용료</td><td>23,520</td><td>1호 일반관리비</td><td>KT</td></tr><tr><td>6</td><td>일반 전화료</td><td>8,330</td><td>1호 일반관리비</td><td>KT</td></tr><tr><td>7</td><td>CCTV 사용료</td><td>126,500</td><td>1호 일반관리비</td><td>에스원 자동이체</td></tr><tr><td>8</td><td>공기청정기 사용료</td><td>25,900</td><td>7호 기타관리비</td><td>교원웰스 자동이체</td></tr><tr><td>9</td><td>기계식 주차장 공사비 8회차</td><td>1,650,000</td><td>5호 수선유지비</td><td>관리단 대표</td></tr><tr><td>10</td><td>태림 위탁관리비 미지급금</td><td>7,000,000</td><td>8호 위탁관리수수료</td><td>(주)태림</td></tr><tr><td>11</td><td>한전 부족납입 차용금 반환</td><td>3,000,000</td><td>기타 차용금상환</td><td>(주)부림 — 5회차</td></tr><tr><td>12</td><td>토너/요석제거제/화장실냄새희석제</td><td>53,340</td><td>7호 기타관리비</td><td>쿠팡 소장 박재덕</td></tr><tr><td>13</td><td>201호 음식물 대형2통 폐기비</td><td>15,000</td><td>13호 폐기물처리</td><td>사설업체</td></tr><tr><td>14</td><td>수도물 수질검사비</td><td>56,980</td><td>7호 기타관리비</td><td>(주)동진생명연구원</td></tr><tr class="total"><td>합계</td><td></td><td>32,974,154</td><td></td><td>미납 7,937,264(부림 도급비)</td></tr></tbody>
+      </table>
+    </div>
+    <p class="section-label">전기료 분납 현황 (누적)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>회차</th><th>납부일</th><th>납부금액</th><th>누계납부</th><th>잔여미납</th></tr></thead>
+        <tbody><tr><td>1회차</td><td>2026.06.15</td><td>16,935,240</td><td>16,935,240</td><td>20,934,980</td></tr><tr><td>2회차</td><td>2026.07.15</td><td>18,831,070</td><td>35,766,310</td><td>2,103,910</td></tr><tr class="total"><td>전체 청구액</td><td></td><td>37,870,220</td><td></td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">잔여 2,103,910원 납부 일정 미확정. 미납 지속 시 월 1.5% 연체 가산금 발생.</div>
+    <p class="section-label">안전계좌 주요 거래내역 (2026.06.30~07.30)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>거래일</th><th>거래종류</th><th>출금</th><th>입금</th><th>잔액</th><th>비고</th></tr></thead>
+        <tbody><tr><td>07.30</td><td>대체</td><td>—</td><td>999</td><td>11,564,435</td><td>NH175534</td></tr><tr><td>07.29</td><td>대체</td><td>—</td><td>1,219,920</td><td>11,563,436</td><td>세인/레이크이</td></tr><tr><td>07.29</td><td>대체</td><td>—</td><td>1,997</td><td>10,343,516</td><td>하나92254</td></tr><tr><td>07.29</td><td>펌뱅킹</td><td>—</td><td>9,985</td><td>10,341,519</td><td>SC74058</td></tr><tr><td>07.28</td><td>CD공동</td><td>—</td><td>1,002,650</td><td>10,331,534</td><td>신한조영수</td></tr><tr><td>07.28</td><td>펌뱅킹</td><td>—</td><td>1,997</td><td>9,328,884</td><td>SC74058</td></tr><tr><td>07.28</td><td>인터넷</td><td>—</td><td>599,400</td><td>9,326,887</td><td>농협김홍준</td></tr><tr><td>07.27</td><td>모바일</td><td>—</td><td>473,750</td><td>8,727,487</td><td>경남위드비</td></tr><tr><td>07.27</td><td>모바일</td><td>—</td><td>1,293,760</td><td>8,253,737</td><td>경남더놀디</td></tr><tr><td>07.27</td><td>대체</td><td>—</td><td>996</td><td>6,959,977</td><td>하나92254</td></tr><tr><td>07.27</td><td>자동이체</td><td>25,900</td><td>—</td><td>6,958,981</td><td>교원청정기 [7호]</td></tr><tr><td>07.27</td><td>대체</td><td>—</td><td>999</td><td>6,984,881</td><td>NH175534</td></tr><tr><td>07.24</td><td>모바일</td><td>—</td><td>747,810</td><td>6,983,882</td><td>신한신유리</td></tr><tr><td>07.24</td><td>인터넷</td><td>—</td><td>616,940</td><td>6,236,072</td><td>경남한시건</td></tr><tr><td>07.22</td><td>인터넷</td><td>—</td><td>664,690</td><td>5,619,132</td><td>농협강치윤</td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">현재 잔액 11,564,435원(07.30 기준). 조회기간 최근 거래순 발췌. 7/1 이후 대규모 출금(전기료·위탁관리비 등)은 이전 자료 참조.</div>
+    <p class="section-label">부림 차용금 내역서 (07.31 기준)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>회차</th><th>차용일</th><th>차용금액</th><th>반환예정</th><th>반환금액</th><th>잔금</th><th>목적</th></tr></thead>
+        <tbody><tr><td>1</td><td>2025.08</td><td>39,675,000</td><td>2026.01~2028.12</td><td>9,900,000</td><td>29,775,000</td><td>기계식 주차장 공사비</td></tr><tr><td>2</td><td>2026.05.30</td><td>10,000,000</td><td>—</td><td>—</td><td>10,000,000</td><td>(주)태림 용역비 지급(1)</td></tr><tr><td>3</td><td>2026.06.15</td><td>4,000,000</td><td>2026.06.30</td><td>4,000,000</td><td>—</td><td>전기료 부족분 대응 (상환완료)</td></tr><tr><td>4</td><td>2026.07.05</td><td>14,937,264</td><td>—</td><td>—</td><td>14,937,264</td><td>도급비 미지급 — 7/31 상계 예정</td></tr><tr><td>5</td><td>2026.07.16</td><td>3,000,000</td><td>2026.07.31</td><td>3,000,000</td><td>—</td><td>전기료 부족분 대응 — 7/31 반환</td></tr><tr class="total"><td>계</td><td></td><td>71,612,264</td><td></td><td>16,900,000</td><td>54,712,264</td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">4회차(14,937,264)는 7/31 부림 위탁관리비 지급으로 상계 처리. 5회차(3,000,000)는 7/31 반환 완료 예정. 상계·반환 후 실질 잔금 54,712,264원(1·2·4회차). 1·2회차 39,775,000원 장기 미상환 상태.</div>
+    
+    
+    <p class="section-label">⚠ 시사점 및 확인 필요 사항</p>
+    <div class="fire-grid">
+      <div class="fire-card urgent">
+        <div class="floor">⚠ 태림 잔여분 11,000,000 → 7,000,000 조정</div>
+        <div class="room">중간집계 대비 4,000,000 감소 — 근거 확인 필요</div>
+        <ul class="items"><li>7월 중간집계(07.15) 결재예정표: 태림 잔여분 11,000,000</li><li>7월 마감(07.31) 결재예정표: 태림 미지급금 7,000,000으로 변경</li><li>차액 4,000,000원 감소 사유 불분명 — 기지급 확인 또는 정산 조정 여부 확인 필요</li><li>6월~7월 태림 지급 누계: 26,088,170(6월) + 7,000,000(7월) = 33,088,170원</li></ul>
+      </div>
+      <div class="fire-card">
+        <div class="floor">✅ 6월분 상하수도 누수보상 640,950원 적용</div>
+        <div class="room">3,700,270 → 3,059,320으로 확정</div>
+        <ul class="items"><li>6월 소화전 누수 수선(06.18~19) 후 창원시 누수보상 요청 결과 확정</li><li>감액 640,950원 적용 — 공사 효과 및 보상 처리 완료</li><li>7월분 사용기간: 2026.05.15~06.14</li></ul>
+      </div>
+      <div class="fire-card urgent">
+        <div class="floor">🔴 8월 이월 미납 26,976,414원</div>
+        <div class="room">전기료 잔여 + 부림 도급비 미지급</div>
+        <ul class="items"><li>전기료 잔여 미납 19,039,150원 — 결재예정표 기재 기준(7/15 이전 시점)</li><li>실제 전기료 잔여: 37,870,220 - 35,766,310(2회 납부) = 2,103,910원</li><li>부림 도급비 미지급 7,937,264원 — 8월 청구서에 포함 예정</li><li>8월 자료 작성 시 전월이월 비용으로 반드시 구분 계상 필요</li></ul>
+      </div>
+      <div class="fire-card urgent">
+        <div class="floor">🔴 부림 차용금 실질 잔금 54,712,264원</div>
+        <div class="room">4·5회차 상계·상환 후에도 1·2회차 미상환</div>
+        <ul class="items"><li>4회차(14,937,264): 7/31 부림 위탁관리비와 상계 → 잔금 해소</li><li>5회차(3,000,000): 7/31 반환 → 잔금 해소</li><li>상계·반환 후 실질 잔금: 1회차 29,775,000 + 2회차 10,000,000 + 4회차 잔여 14,937,264 = 54,712,264원</li><li>1회차(주차장공사) 만기 2028.12까지 월 825,000씩 상환 중 — 2회차 별도 상환 계획 필요</li></ul>
+      </div>
+      <div class="fire-card">
+        <div class="floor">⚠ 전기료 잔여 2,103,910원 연체 위험</div>
+        <div class="room">분납 2회차 완료 후 소액 잔여 미납</div>
+        <ul class="items"><li>전체 청구액 37,870,220 중 35,766,310 납부 완료(6/15 + 7/15)</li><li>잔여 2,103,910원 납부 일정 미확정</li><li>연체 지속 시 월 1.5% 가산금 약 31,559원/월 추가 발생</li><li>조기 납부로 연체료 차단 권장</li></ul>
+      </div>
+      <div class="fire-card">
+        <div class="floor">⚠ 201호 이바돔 — 소송 비용 누적</div>
+        <div class="room">법무 비용 누계 600,600원 / 소송 장기화 우려</div>
+        <ul class="items"><li>지급명령 이의신청(07.08)으로 정식 소송 이행</li><li>법무 비용 누계: 지급명령 503,000 + 송달 21,500 + 등기 3,900 + 인지대 72,200 = 600,600원</li><li>이의신청에 별도 내용 없이 제출 — 지연 전술 가능성</li><li>소송 기간 미납관리비 회수 불가 — 충당 방안 검토 필요</li></ul>
+      </div>
+      <div class="fire-card">
+        <div class="floor">7월 잔액 회복 — 6월 대비 개선</div>
+        <div class="room">7/30 잔액 11,564,435원 (6/30 23,930,038 → 7/15 1,048,826 → 회복)</div>
+        <ul class="items"><li>7/15 전기료 대규모 출금(18,831,070) 후 1,048,826원으로 급감</li><li>7월 세대관리비 수입 유입으로 11,564,435원으로 회복</li><li>7/31 결재 예정분 이행 후 잔액은 8월 초 세대관리비 수납에 의존</li><li>미납이월 26,976,414 중 전기료 실질잔여(2,103,910)를 제외하면 관리 가능한 수준</li></ul>
+      </div></div>
+
+    <div style="margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:0.72rem;color:var(--text3);">
+      레이크펄스 빌딩 관리사무소 &nbsp;·&nbsp; 2026년 7월 &nbsp;·&nbsp; 상태: 마감예정 &nbsp;·&nbsp; 최종 업데이트: 2026-07-31
+    </div>
+  </div><!-- /panel-7 -->
 
   <div class="month-panel" id="panel-8">
     <div class="empty-state">
