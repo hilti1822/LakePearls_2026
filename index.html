@@ -750,28 +750,28 @@
 
     <p class="section-label">요약</p>
     <div class="kpi-row">
-      <div class="kpi negative">
-        <div class="label">안전계좌 잔액 (8/13)</div>
-        <div class="value">3,018,400<span class="unit">원</span></div>
+      <div class="kpi positive">
+        <div class="label">안전계좌 잔액 (8/28)</div>
+        <div class="value">12,686,168<span class="unit">원</span></div>
       </div>
       <div class="kpi negative">
-        <div class="label">8/15 결재 예정 합계</div>
-        <div class="value">21,739,110<span class="unit">원</span></div>
+        <div class="label">8월 결재/미납 예정 누계</div>
+        <div class="value">59,234,494<span class="unit">원</span></div>
       </div>
       <div class="kpi negative">
         <div class="label">8월 미납 이월액</div>
-        <div class="value">16,039,150<span class="unit">원</span></div>
+        <div class="value">28,039,150<span class="unit">원</span></div>
       </div>
-      <div class="kpi ">
-        <div class="label">8월부터 월 통합보험료</div>
-        <div class="value">742,610<span class="unit">원</span></div>
+      <div class="kpi negative">
+        <div class="label">부림 차용금 잔금</div>
+        <div class="value">65,125,000<span class="unit">원</span></div>
       </div></div>
     
     <div style="margin:14px 0 0;padding:12px 16px;border:1px solid var(--danger);border-radius:8px;background:rgba(255,107,107,0.06);font-size:0.78rem;color:var(--text2);line-height:1.6;">
-      ⚠ 08.13 잔액 3,018,400원 — 8/15 전기료 출금(20,601,810) 전 세대관리비 유입 필수. 08.05 태림(7,000,000)+부림(10,874,528) 대규모 출금으로 잔액 급감. 8월부터 통합보험료 742,610원/월로 인상(구단가 451,210 대비 +291,400). 8/15 분납 후에도 전기료 잔여 16,039,150원이 9월로 이월됨.
+      ⚠ 부림 차용금이 49,062,264(7월)에서 65,125,000원으로 급증. 5회차(15,000,000 — 전기료 대납) + 6회차(12,000,000 — 미지급 도급비) 신규 추가. 전기료 잔여 미납 16,039,150원이 9월로 이월. 8월부터 통합보험료 742,610원/월 확정(신단가).
     </div>
     
-    <p class="section-label">8월 결재 항목별 금액 (법정 항목 기준, 8/15 기준)</p>
+    <p class="section-label">8월 법정 항목별 결재 예정 (8/15+8/31 합산)</p>
     <div class="bar-chart" style="margin-bottom:24px;">
       <div class="bar-row">
         <span class="bar-label">9호. 전기료</span>
@@ -779,9 +779,29 @@
         <span class="bar-val">20,601,810</span>
       </div>
       <div class="bar-row">
-        <span class="bar-label">8호. 통합보험료 소급</span>
-        <div class="bar-track"><div class="bar-fill alt" style="width:2.8%"></div></div>
-        <span class="bar-val">582,800</span>
+        <span class="bar-label">8호. 위탁관리수수료</span>
+        <div class="bar-track"><div class="bar-fill alt" style="width:87.6%"></div></div>
+        <span class="bar-val">18,046,664</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">기타(차용금상환)</span>
+        <div class="bar-track"><div class="bar-fill" style="width:72.8%"></div></div>
+        <span class="bar-val">15,000,000</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">10호. 수도료</span>
+        <div class="bar-track"><div class="bar-fill alt" style="width:12.0%"></div></div>
+        <span class="bar-val">2,480,820</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">3호·5호. 안전관리비</span>
+        <div class="bar-track"><div class="bar-fill" style="width:13.7%"></div></div>
+        <span class="bar-val">2,818,000</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">5호. 수선유지비</span>
+        <div class="bar-track"><div class="bar-fill alt" style="width:8.3%"></div></div>
+        <span class="bar-val">1,715,930</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">2호. 청소비</span>
@@ -792,117 +812,129 @@
         <span class="bar-label">4호. 소독비</span>
         <div class="bar-track"><div class="bar-fill alt" style="width:1.0%"></div></div>
         <span class="bar-val">200,000</span>
-      </div>
-      <div class="bar-row">
-        <span class="bar-label">1호. 일반관리비</span>
-        <div class="bar-track"><div class="bar-fill" style="width:0.5%"></div></div>
-        <span class="bar-val">103,530</span>
-      </div>
-      <div class="bar-row">
-        <span class="bar-label">5호. 수선유지비</span>
-        <div class="bar-track"><div class="bar-fill alt" style="width:0.3%"></div></div>
-        <span class="bar-val">62,400</span>
       </div></div>
     
+    <p class="section-label">법정 14개 항목별 지출 집계 (8월 결재예정표 기준)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>항목</th><th>8/15 결재</th><th>8/31 결재</th><th>합계</th><th>미납</th></tr></thead>
+        <tbody><tr><td>1호. 일반관리비</td><td>103,530</td><td>39,660</td><td>143,190</td><td>—</td></tr><tr><td>2호. 청소비</td><td>173,370</td><td>—</td><td>173,370</td><td>—</td></tr><tr><td>3호. 경비비(안전관리)</td><td>—</td><td>2,818,000</td><td>2,818,000</td><td>—</td></tr><tr><td>4호. 복리활동비</td><td>—</td><td>200,000</td><td>200,000</td><td>—</td></tr><tr><td>5호. 수선유지비</td><td>62,400</td><td>1,715,930</td><td>1,778,330</td><td>—</td></tr><tr><td>6호. 냉난방비</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>7호. 기타관리비</td><td>15,200</td><td>224,720</td><td>239,920</td><td>—</td></tr><tr><td>8호. 위탁관리수수료</td><td>291,400</td><td>18,046,664</td><td>18,338,064</td><td>12,000,000</td></tr><tr><td>9호. 전기료</td><td>20,601,810</td><td>—</td><td>20,601,810</td><td>16,039,150</td></tr><tr><td>10호. 수도료</td><td>—</td><td>2,480,820</td><td>2,480,820</td><td>—</td></tr><tr><td>11호. 가스사용료</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>12호. 정화조오물처리</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>13호. 폐기물처리</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>14호. 건물보험료</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>기타(차용금상환)</td><td>—</td><td>15,000,000</td><td>15,000,000</td><td>—</td></tr><tr class="total"><td>합계</td><td>21,447,710</td><td>37,786,784</td><td>59,234,494</td><td>28,039,150</td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">8/31 결재예정표 합계 37,786,784 = 16개 항목 중 14항목 기준(전구외2종 23,410 + 대체근무수당 74,820은 결의서05에만 계상, 결재예정표 공식합계 외). 미납 28,039,150 = 전기료 잔여 16,039,150 + 부림 도급비 미지급 12,000,000.</div>
     <p class="section-label">결의서(01) — 7월분 전기요금 (한국전력공사, 2026.08.15)</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>항목</th><th>금액</th><th>비고</th></tr></thead>
-        <tbody><tr><td>사용기간</td><td>—</td><td>2026.06.23~2026.07.22</td></tr><tr><td>사용량</td><td>—</td><td>78,706 kWh (전월 76,561 대비 +2.8%)</td></tr><tr><td>기본요금</td><td>2,820,480</td><td>339kW × 8,320원</td></tr><tr><td>전력량요금 합계</td><td>11,396,558</td><td>경부하+중간부하+최대부하 (여름철)</td></tr><tr><td>기후환경요금</td><td>708,354</td><td>—</td></tr><tr><td>연료비조정액</td><td>393,530</td><td>—</td></tr><tr><td>지상역률료</td><td>-28,204</td><td>역률 97%</td></tr><tr><td>진상역률료</td><td>73,332</td><td>역률 82%</td></tr><tr><td>전기요금계</td><td>15,364,050</td><td>—</td></tr><tr><td>부가가치세</td><td>1,536,405</td><td>—</td></tr><tr><td>연체료</td><td>282,276</td><td>누적 미납에 대한 가산금</td></tr><tr><td>전력기금</td><td>414,820</td><td>—</td></tr><tr><td>가산금</td><td>4,260</td><td>—</td></tr><tr><td>원단위절사</td><td>-1</td><td>—</td></tr><tr><td>당월요금계</td><td>17,601,810</td><td>납기 2026.08.18</td></tr><tr><td>TV수신료</td><td>220</td><td>—</td></tr><tr><td>미납전기요금</td><td>19,031,210</td><td>06월분 15,831,070 + 05월분 3,208,080 잔여</td></tr><tr><td>미납TV수신료</td><td>7,940</td><td>—</td></tr><tr class="total"><td>청구금액</td><td>36,640,960</td><td>납기 2026.08.18</td></tr></tbody>
+        <tbody><tr><td>사용기간</td><td>—</td><td>2026.06.23~2026.07.22 / 78,706 kWh</td></tr><tr><td>당월 전기요금계</td><td>17,601,810</td><td>기본+전력량+환경+연료비+역률+정산 등</td></tr><tr><td>미납전기요금</td><td>19,031,210</td><td>06월분 15,831,070 + 05월분 3,208,080</td></tr><tr><td>미납TV수신료</td><td>7,940</td><td>—</td></tr><tr><td>연체료</td><td>282,276</td><td>누적 미납에 대한 가산금</td></tr><tr class="total"><td>청구금액</td><td>36,640,960</td><td>납기 2026.08.18</td></tr></tbody>
       </table>
-    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">납부가능액 20,601,810(8/15 결의서01 기준) 납부 후 잔여 미납 16,039,150원이 9월로 이월. 계약전력 900kW / 요금적용전력 339kW / 선택요금 II.</div>
-    <p class="section-label">26&#x27;06월분 지출결의서 — 부림 위탁관리비 (2026.08.10 발행)</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>내역</th><th>금액</th><th>거래처/계좌</th></tr></thead>
-        <tbody><tr><td>도급인건비</td><td>13,169,140</td><td>(주)부림 / 농협 301-3867-7091-81</td></tr><tr><td>부가세 10%</td><td>1,316,914</td><td>—</td></tr><tr><td>통합보험료(사용자부담분) — 신단가 적용</td><td>742,610</td><td>구단가 451,210 → 신단가 742,610 (8월부터)</td></tr><tr><td>— 도급비 소계 —</td><td>15,228,664</td><td>—</td></tr><tr><td>전기안전관리비</td><td>660,000</td><td>(주)이엠에이코리아</td></tr><tr><td>소방안전관리비</td><td>363,000</td><td>(주)협동소방</td></tr><tr><td>승강기유지비</td><td>605,000</td><td>티케이</td></tr><tr><td>기계식주차유지보수비</td><td>880,000</td><td>금아기전</td></tr><tr><td>소방안전관리자 수당</td><td>100,000</td><td>반장 황재준</td></tr><tr><td>기계설비유지관리자 선임비</td><td>100,000</td><td>반장 신동국</td></tr><tr><td>정보통신설비유지관리자 선임비</td><td>—</td><td>계상 없음</td></tr><tr><td>전산수수료</td><td>110,000</td><td>에이.엠.아이</td></tr><tr><td>— 안전관리수수료 소계 —</td><td>2,818,000</td><td>—</td></tr><tr class="total"><td>당월 청구금액</td><td>18,046,664</td><td>미지급금 없음</td></tr></tbody>
-      </table>
-    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">08.10 발행 = 6월분 결의서를 뒤늦게 정식 발행. 통합보험료가 신단가(742,610)로 적용되어 기존 6월 JSON의 451,210과 차이. 이에 따라 6,7월 2개월 소급분 582,800(=291,400×2)이 결의서02에 별도 청구됨. 도급계약서 계약금액: 14,486,054(부가세포함) — 차액은 통합보험료 단가변경분.</div>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">납부가능액(결의서01) 20,601,810 납부 후 잔여 16,039,150원이 9월 이월.</div>
     <p class="section-label">결의서(02) — 소모품·통신·보험료·법무 (2026.08.15)</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>지출일</th><th>내역</th><th>거래처</th><th>금액</th><th>법정항목</th><th>지출구분</th></tr></thead>
-        <tbody><tr><td>08.21</td><td>휴대용 카드단말기 통신료</td><td>SK텔레콤</td><td>11,000</td><td>1호 일반관리비</td><td>통신비</td></tr><tr><td>08.21</td><td>승강기 비상전화시용료</td><td>SK텔레콤</td><td>3,850</td><td>1호 일반관리비</td><td>통신비</td></tr><tr><td>08.04</td><td>청소용품 구입비</td><td>에스엠크린</td><td>119,570</td><td>2호 청소비</td><td>소모품비</td></tr><tr><td>08.04</td><td>종량제 봉투 구입비</td><td>레이크펄스점 C&amp;U</td><td>53,800</td><td>2호 청소비</td><td>소모품비</td></tr><tr><td>08.04</td><td>커피 구입비</td><td>레이크펄스점 C&amp;U</td><td>15,200</td><td>7호 기타관리비</td><td>소모품비</td></tr><tr><td>08.15</td><td>통합보험료 사용자부담분 6·7월 소급분</td><td>(주)부림</td><td>582,800</td><td>8호 위탁관리수수료</td><td>도급비</td></tr><tr><td>08.03</td><td>501호 부동산가압류신청 취하 보수비</td><td>법무사 김성호(김세준)</td><td>88,680</td><td>1호 일반관리비</td><td>소모품비</td></tr><tr><td>08.15</td><td>상가 방역비</td><td>(주)진성</td><td>200,000</td><td>4호 소독비</td><td>소모품비</td></tr><tr><td>08.11</td><td>다운라이트·요석분해제·호스펌프 구입비</td><td>쿠팡 소장 박재덕</td><td>62,400</td><td>5호 수선유지비</td><td>수선비</td></tr><tr class="total"><td>합계</td><td></td><td></td><td>1,137,300</td><td></td><td></td></tr></tbody>
+        <tbody><tr><td>08.21</td><td>휴대용 카드단말기 통신료</td><td>SK텔레콤</td><td>11,000</td><td>1호 일반관리비</td><td>통신비</td></tr><tr><td>08.21</td><td>승강기 비상전화시용료</td><td>SK텔레콤</td><td>3,850</td><td>1호 일반관리비</td><td>통신비</td></tr><tr><td>08.04</td><td>청소용품 구입비</td><td>에스엠크린</td><td>119,570</td><td>2호 청소비</td><td>소모품비</td></tr><tr><td>08.04</td><td>종량제 봉투 구입비</td><td>레이크펄스점 C&amp;U</td><td>53,800</td><td>2호 청소비</td><td>소모품비</td></tr><tr><td>08.04</td><td>커피 구입비</td><td>레이크펄스점 C&amp;U</td><td>15,200</td><td>7호 기타관리비</td><td>소모품비</td></tr><tr><td>08.15</td><td>통합보험료 사용자부담분 7월 소급분</td><td>(주)부림</td><td>291,400</td><td>8호 위탁관리수수료</td><td>도급비</td></tr><tr><td>08.03</td><td>501호 부동산가압류신청 취하 보수비</td><td>법무사 김성호(김세준)</td><td>88,680</td><td>1호 일반관리비</td><td>소모품비</td></tr><tr><td>08.15</td><td>상가 방역비</td><td>(주)진성</td><td>200,000</td><td>4호 소독비</td><td>소모품비</td></tr><tr><td>08.11</td><td>다운라이트·요석분해제·호스펌프 구입비</td><td>쿠팡 소장 박재덕</td><td>62,400</td><td>5호 수선유지비</td><td>수선비</td></tr><tr class="total"><td>합계</td><td></td><td></td><td>845,900</td><td></td><td></td></tr></tbody>
       </table>
-    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">지출구분별: 시설수선비 62,400 / 소모품비 1,060,050 / 통신비 14,850. 통합보험료 소급 582,800 = (신단가742,610-구단가451,210=291,400) × 2개월. 501호 가압류취하 88,680은 2026.08.03 법원 접수, 김세준 계좌 송금 확인(농협 302-2854-126661).</div>
-    <p class="section-label">8월 15일 결재 예정 목록</p>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">지출구분별: 시설수선비 62,400 / 소모품비 768,650 / 통신비 14,850. 통합보험료 소급 291,400 = 7월분 1개월 (6월분은 26&#x27;06월분 부림결의서 별도). 501호 가압류취하 완료 — 창원지방법원 2026카단11522.</div>
+    <p class="section-label">결의서(03) — 부림 위탁관리비 8월분 (2026.08.31)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>내역</th><th>금액</th><th>거래처/계좌</th></tr></thead>
+        <tbody><tr><td>도급인건비</td><td>13,169,140</td><td>(주)부림 / 농협 301-3867-7091-81</td></tr><tr><td>부가세 10%</td><td>1,316,914</td><td>—</td></tr><tr><td>통합보험료(사용자부담분) — 신단가</td><td>742,610</td><td>8월부터 742,610원/월</td></tr><tr><td>— 도급비 소계 —</td><td>15,228,664</td><td>—</td></tr><tr><td>전기안전관리비</td><td>660,000</td><td>(주)이엠에이코리아</td></tr><tr><td>소방안전관리비</td><td>363,000</td><td>(주)협동소방</td></tr><tr><td>승강기유지비</td><td>605,000</td><td>티케이</td></tr><tr><td>기계식주차유지보수비</td><td>880,000</td><td>금아기전</td></tr><tr><td>소방안전관리자 수당</td><td>100,000</td><td>반장 황재준</td></tr><tr><td>기계설비유지관리자 선임비</td><td>100,000</td><td>반장 신동국</td></tr><tr><td>정보통신설비유지관리자 선임비</td><td>—</td><td>교육중 (26년 7월부터 시행)</td></tr><tr><td>전산수수료</td><td>110,000</td><td>에이.엠.아이</td></tr><tr><td>— 안전관리수수료 소계 —</td><td>2,818,000</td><td>—</td></tr><tr class="total"><td>당월 청구금액</td><td>18,046,664</td><td></td></tr><tr class="total" style="opacity:0.85;"><td>미지급금</td><td>12,000,000</td><td>→ 6회차 차용금으로 처리 (08.19)</td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">미지급 12,000,000 = 부림 차용금 6회차(08.19, &#x27;8월말 현재 미지급 도급비&#x27;). 도급계약서 계약금액 14,486,054 대비 실청구 15,228,664 — 차액 742,610은 통합보험료 신단가분.</div>
+    <p class="section-label">결의서(04) — 공과금 (2026.08.31)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>내역</th><th>청구금액</th><th>납기일</th><th>거래처</th><th>사용기간</th></tr></thead>
+        <tbody><tr><td>8월분 상·하수도 사용료</td><td>2,480,820</td><td>26.08.31</td><td>창원시</td><td>26.06.15~26.07.14</td></tr><tr><td>8월분 일반전화료</td><td>8,280</td><td>26.08.25</td><td>(주)케이티</td><td>26.07.01~26.07.31</td></tr><tr><td>8월분 인터넷 사용료</td><td>23,100</td><td>26.08.31</td><td>(주)케이티</td><td>26.07.01~26.07.31</td></tr><tr><td>8월분 CCTV 사용료</td><td>126,500</td><td>26.08.23</td><td>에스원</td><td>26.07.01~26.07.31</td></tr><tr class="total"><td>합계</td><td>2,638,700</td><td></td><td></td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">상하수도 2,480,820 — 전월 고지서 예고(4,229,670) 및 결의서04(3,059,320) 대비 대폭 감소. 소화전 누수 해결 후 사용량 정상화 확인.</div>
+    <p class="section-label">결의서(05) — 관리단·소장 청구 (2026.08.31)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지출일</th><th>내역</th><th>거래처</th><th>금액</th><th>법정항목</th><th>지출구분</th></tr></thead>
+        <tbody><tr><td>08.31</td><td>관리단 회장 판공비</td><td>관리단</td><td>200,000</td><td>4호 복리활동비</td><td>장기수선충당금</td></tr><tr><td>08.22</td><td>공기청정기 사용료</td><td>교원웰스</td><td>25,900</td><td>7호 기타관리비</td><td>관리비 계좌</td></tr><tr><td>09.05</td><td>주차장 공사비 24회 분할(9회차)</td><td>(주)부림 대표</td><td>1,650,000</td><td>5호 수선유지비</td><td>수선비(주차수입)</td></tr><tr><td>08.19</td><td>생수 구입비</td><td>동원생수</td><td>33,000</td><td>7호 기타관리비</td><td>관리비 계좌</td></tr><tr><td>08.18</td><td>한전 부족납입 차용금 반환</td><td>(주)부림 대표</td><td>15,000,000</td><td>기타(차용금상환)</td><td>관리비 계좌</td></tr><tr><td>08.24</td><td>정보통신설비 유지보수관리자 교육비</td><td>ICT폴리텍 대학</td><td>150,000</td><td>1호 일반관리비</td><td>관리비 계좌</td></tr><tr><td>08.20</td><td>절연,투명,수정테이프, 스테플 침 구입비</td><td>쿠팡</td><td>20,650</td><td>5호 수선유지비</td><td>수선비</td></tr><tr><td>08.20</td><td>스프레이 방수제 구입비</td><td>쿠팡</td><td>21,870</td><td>5호 수선유지비</td><td>수선비</td></tr><tr><td>08.26</td><td>볼전구, 직결 피스, 도어 손잡이 구입비</td><td>쿠팡</td><td>23,410</td><td>5호 수선유지비</td><td>수선비</td></tr><tr><td>08.25</td><td>정보통신 관리자 교육 대체근무자 수당</td><td>반장 정영길</td><td>74,820</td><td>1호 일반관리비</td><td>관리비 계좌</td></tr><tr class="total"><td>합계</td><td></td><td></td><td>17,199,650</td><td></td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">지출구분별: 시설수선비 1,715,930 / 소모품비 15,283,720 / 장기수선충당금 200,000. 한전 차용금 반환 15,000,000 = 부림 차용금 5회차(08.18) 상환. 전구외2종(23,410) + 대체근무수당(74,820)은 결의서05에 포함되나 결재예정표 공식 합계(37,786,784)에는 미반영.</div>
+    <p class="section-label">8월 15일 결재 확정 목록</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>순번</th><th>품목</th><th>금액</th><th>법정항목</th><th>비고</th></tr></thead>
-        <tbody><tr><td>1</td><td>7월분 전기요금 (미납분 3백만원 추가)</td><td>20,601,810</td><td>9호 전기료</td><td>총미납 36,640,960 / 납부후잔여 16,039,150</td></tr><tr><td>2</td><td>SK텔레콤 카드단말기 사용료</td><td>11,000</td><td>1호 일반관리비</td><td>자동이체 / 납기 08.21</td></tr><tr><td>3</td><td>SK텔레콤 승강기 비상전화 통신비</td><td>3,850</td><td>1호 일반관리비</td><td>납기 08.21</td></tr><tr><td>4</td><td>청소용품 구입비</td><td>119,570</td><td>2호 청소비</td><td>에스엠크린 카드결재</td></tr><tr><td>5</td><td>종량제 봉투 구입비</td><td>53,800</td><td>2호 청소비</td><td>C&amp;U 카드결재</td></tr><tr><td>6</td><td>커피 구입비</td><td>15,200</td><td>7호 기타관리비</td><td>C&amp;U 카드결재</td></tr><tr><td>7</td><td>통합보험료 사용자부담분 6·7월 소급분</td><td>582,800</td><td>8호 위탁관리수수료</td><td>291,400×2개월 소급 — 단가 451,210→742,610 변경</td></tr><tr><td>8</td><td>501호 부동산가압류신청 취하 보수비</td><td>88,680</td><td>1호 일반관리비</td><td>법무사 김성호(김세준) / 08.03 처리</td></tr><tr><td>9</td><td>상가 방역비</td><td>200,000</td><td>4호 소독비</td><td>(주)진성</td></tr><tr><td>10</td><td>다운라이트·요석분해제·호스펌프 구입비</td><td>62,400</td><td>5호 수선유지비</td><td>쿠팡 / LED매입등+석회분해제+호스펌프</td></tr><tr class="total"><td>합계</td><td></td><td>21,739,110</td><td></td><td>미납 16,039,150(전기료 잔여)</td></tr></tbody>
+        <tbody><tr><td>1</td><td>7월분 전기요금 (미납분 3백만원 추가)</td><td>20,601,810</td><td>9호 전기료</td><td>총미납 36,640,960 / 잔여 16,039,150</td></tr><tr><td>2</td><td>SK텔레콤 카드단말기 사용료</td><td>11,000</td><td>1호 일반관리비</td><td>자동이체</td></tr><tr><td>3</td><td>SK텔레콤 승강기 비상전화 통신비</td><td>3,850</td><td>1호 일반관리비</td><td>—</td></tr><tr><td>4</td><td>청소용품 구입비</td><td>119,570</td><td>2호 청소비</td><td>에스엠크린</td></tr><tr><td>5</td><td>종량제 봉투 구입비</td><td>53,800</td><td>2호 청소비</td><td>C&amp;U</td></tr><tr><td>6</td><td>커피 구입비</td><td>15,200</td><td>7호 기타관리비</td><td>C&amp;U</td></tr><tr><td>7</td><td>통합보험료 사용자부담분 7월 소급분</td><td>291,400</td><td>8호 위탁관리수수료</td><td>신단가742,610-구단가451,210=291,400</td></tr><tr><td>8</td><td>501호 부동산가압류신청 취하 보수비</td><td>88,680</td><td>1호 일반관리비</td><td>법무사 김성호(김세준)</td></tr><tr><td>9</td><td>상가 방역비</td><td>200,000</td><td>4호 소독비</td><td>(주)진성</td></tr><tr><td>10</td><td>다운라이트·요석분해제·호스펌프 구입비</td><td>62,400</td><td>5호 수선유지비</td><td>쿠팡</td></tr><tr class="total"><td>합계</td><td></td><td>21,447,710</td><td></td><td>미납 16,039,150 (전기료 잔여)</td></tr></tbody>
       </table>
     </div>
-    <p class="section-label">8월 31일 결재 예정 항목 (금액 미확정 — 8/31 결의서 발행 후 업데이트)</p>
+    <p class="section-label">8월 31일 결재 예정 목록</p>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>순번</th><th>품목</th><th>예상금액</th><th>법정항목</th><th>비고</th></tr></thead>
-        <tbody><tr><td>1</td><td>7월분 상하수도료</td><td>4,229,670</td><td>10호 수도료</td><td>창원시 / 7월 고지서 기준 (4,229,670 예상)</td></tr><tr><td>2</td><td>8월분 부림 도급비</td><td>18,046,664</td><td>8호 위탁관리수수료</td><td>(주)부림 / 신단가 742,610 기준</td></tr><tr><td>3</td><td>시설 안전관리비</td><td>2,818,000</td><td>3호·5호 안전관리</td><td>위탁업체·관리자선임비</td></tr><tr><td>4</td><td>관리단 대표 판공비</td><td>200,000</td><td>4호 복리활동비</td><td>관리단 대표</td></tr><tr><td>5</td><td>인터넷 사용료</td><td>—</td><td>1호 일반관리비</td><td>KT — 금액 미확정</td></tr><tr><td>6</td><td>일반 전화료</td><td>—</td><td>1호 일반관리비</td><td>KT — 금액 미확정</td></tr><tr><td>7</td><td>CCTV 사용료</td><td>126,500</td><td>1호 일반관리비</td><td>에스원 자동이체</td></tr><tr><td>8</td><td>공기청정기 사용료</td><td>25,900</td><td>7호 기타관리비</td><td>교원웰스 자동이체</td></tr><tr><td>9</td><td>기계식 주차장 공사비 9회차</td><td>1,650,000</td><td>5호 수선유지비</td><td>관리단 대표</td></tr><tr><td>10</td><td>한전 부족납입 차용금 반환</td><td>—</td><td>기타 차용금상환</td><td>(주)부림 — 금액 미확정</td></tr><tr><td>11</td><td>생수 구입비</td><td>—</td><td>7호 기타관리비</td><td>금액 미확정</td></tr><tr class="total"><td>예상 합계 (일부)</td><td>27,096,734</td><td></td><td></td><td>* 금액 미확정 항목 제외한 예상치</td></tr></tbody>
+        <thead><tr><th>순번</th><th>품목</th><th>금액</th><th>법정항목</th><th>비고</th></tr></thead>
+        <tbody><tr><td>1</td><td>8월분 상·하수도 사용료</td><td>2,480,820</td><td>10호 수도료</td><td>창원시 / 06.15~07.14 사용분</td></tr><tr><td>2</td><td>부림 위탁관리비 (도급비)</td><td>15,228,664</td><td>8호 위탁관리수수료</td><td>(주)부림 / 미지급 12,000,000</td></tr><tr><td>3</td><td>시설 안전관리비</td><td>2,818,000</td><td>3호·5호 안전관리</td><td>위탁업체·관리자선임비</td></tr><tr><td>4</td><td>관리단 대표 판공비</td><td>200,000</td><td>4호 복리활동비</td><td>관리단 대표</td></tr><tr><td>5</td><td>인터넷 사용료</td><td>23,100</td><td>1호 일반관리비</td><td>KT</td></tr><tr><td>6</td><td>일반 전화료</td><td>8,280</td><td>1호 일반관리비</td><td>KT</td></tr><tr><td>7</td><td>CCTV 사용료</td><td>126,500</td><td>1호 일반관리비</td><td>에스원 자동이체</td></tr><tr><td>8</td><td>공기청정기 사용료</td><td>25,900</td><td>7호 기타관리비</td><td>교원웰스 자동이체</td></tr><tr><td>9</td><td>기계식 주차장 공사비 9회차</td><td>1,650,000</td><td>5호 수선유지비</td><td>관리단 대표</td></tr><tr><td>10</td><td>한전 부족납입 차용금 반환</td><td>15,000,000</td><td>기타(차용금상환)</td><td>(주)부림 — 5회차</td></tr><tr><td>11</td><td>생수 구입비</td><td>33,000</td><td>7호 기타관리비</td><td>동원생수</td></tr><tr><td>12</td><td>정보통신설비 유지보수관리자 교육비</td><td>150,000</td><td>1호 일반관리비</td><td>ICT폴리텍 대학</td></tr><tr><td>13</td><td>절연테이프외 3종 구입비</td><td>20,650</td><td>5호 수선유지비</td><td>쿠팡</td></tr><tr><td>14</td><td>방수 스프레이 2종 구입비</td><td>21,870</td><td>5호 수선유지비</td><td>쿠팡</td></tr><tr class="total"><td>합계 (결재예정표 기준)</td><td></td><td>37,786,784</td><td></td><td>미납 12,000,000 (부림 도급비)</td></tr></tbody>
       </table>
-    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">8/31 결재예정 표에 금액 미기재. 부림 도급비 18,046,664는 26&#x27;06월분 결의서 기준으로 8월분도 동일 예상. 7월분 상하수도 4,229,670은 7월 고지서 기준 예상치 — 누수보상 등 조정 가능.</div>
-    <p class="section-label">통합보험료 단가 변경 이력 및 소급 구조</p>
-    <div class="table-wrap">
-      <table><tbody><tr><td>구단가 (5월까지)</td><td>451,210원/월</td></tr><tr><td>신단가 (6월부터)</td><td>742,610원/월</td></tr><tr><td>월 인상액</td><td>291,400원</td></tr><tr><td>소급 대상</td><td>2026년 6월, 7월분 (2개월)</td></tr><tr><td>소급 합계</td><td>291,400 × 2 = 582,800원</td></tr><tr><td>청구 방법</td><td>8월 결의서02에 일괄 소급 청구 (08.10 발행)</td></tr><tr><td>8월부터 월 도급비</td><td>13,169,140 + 1,316,914 + 742,610 = 15,228,664원</td></tr><tr><td>8월부터 월 총청구(도급+안전관리)</td><td>15,228,664 + 2,818,000 = 18,046,664원</td></tr><tr><td>기존 월 총청구 대비 증가</td><td>+291,400원/월</td></tr></tbody></table>
-    </div>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">결의서05의 전구외2종(23,410)·대체근무수당(74,820)은 결재예정표 공식합계 외 별도 처리.</div>
     <p class="section-label">전기료 분납 현황 (누적)</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>회차</th><th>납부일</th><th>납부금액</th><th>누계납부</th><th>잔여미납</th></tr></thead>
-        <tbody><tr><td>1회차</td><td>2026.06.15</td><td>16,935,240</td><td>16,935,240</td><td>20,934,980</td></tr><tr><td>2회차</td><td>2026.07.15</td><td>18,831,070</td><td>35,766,310</td><td>2,103,910</td></tr><tr><td>3회차</td><td>2026.08.15</td><td>20,601,810</td><td>56,368,120</td><td>16,039,150</td></tr><tr class="total"><td>3회차 후 잔여</td><td></td><td></td><td></td><td>16,039,150 — 9월 이월</td></tr></tbody>
+        <tbody><tr><td>1회차</td><td>2026.06.15</td><td>16,935,240</td><td>16,935,240</td><td>20,934,980</td></tr><tr><td>2회차</td><td>2026.07.15</td><td>18,831,070</td><td>35,766,310</td><td>2,103,910</td></tr><tr><td>3회차</td><td>2026.08.15</td><td>20,601,810</td><td>56,368,120</td><td>16,039,150</td></tr><tr class="total"><td>3회차 후 잔여</td><td></td><td></td><td>56,368,120</td><td>16,039,150 — 9월 이월</td></tr></tbody>
       </table>
-    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">8/15 납부 후 잔여 16,039,150원은 미납 6월분(15,831,070) + 미납 5월분(3,208,080) 잔여 합산에서 8/15 납부분 차감 후 잔액. 연체료 8월 청구: 282,276원. 분납 지속 시 매월 연체가산금 누적.</div>
-    <p class="section-label">501호 성재원 부동산가압류 취하 — 법무 처리 완료</p>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">연체료 8월 청구: 282,276원. 7월분 사용량 78,706kWh(전월 76,561 대비 +2.8%). 잔여 16,039,150원 분납 지속 시 9월에도 연체가산금 발생.</div>
+    <p class="section-label">부림 차용/미지급금 내역서 (2026.08.31 기준)</p>
     <div class="table-wrap">
-      <table><tbody><tr><td>사건번호</td><td>창원지방법원 2026카단11522 [전자]부동산가압류</td></tr><tr><td>채권자</td><td>레이크펄스빌딩관리단</td></tr><tr><td>채무자</td><td>성재원 (501호)</td></tr><tr><td>처리내용</td><td>신청취하 및 집행해제</td></tr><tr><td>법원 접수일</td><td>2026.08.03</td></tr><tr><td>담당 법무사</td><td>김성호 사무소 / 담당자 김세준</td></tr><tr><td>보수비 합계</td><td>88,680원 (수수료55,000 + 공과금33,680)</td></tr><tr><td>공과금 내역</td><td>송달 11,280 + 증지 8,000 + 등록세·교육세 14,400</td></tr><tr><td>송금일시</td><td>2026.08.03 / 농협 302-2854-126661 (김세준)</td></tr><tr><td>의미</td><td>501호 미납관리비 합의 또는 납부로 가압류 취하 처리 완료</td></tr></tbody></table>
-    </div>
-    <p class="section-label">안전계좌 거래내역 (2026.07.13~08.13)</p>
+      <table>
+        <thead><tr><th>회차</th><th>차용일</th><th>차용금액</th><th>반환일</th><th>반환금액</th><th>잔금</th><th>목적</th></tr></thead>
+        <tbody><tr><td>1</td><td>2025.08</td><td>39,675,000</td><td>2026.01~07.31(최종)</td><td>11,550,000</td><td>28,125,000</td><td>기계식 주차장 공사비 (8회차까지)</td></tr><tr><td>2</td><td>2026.05.31</td><td>10,000,000</td><td>—</td><td>—</td><td>10,000,000</td><td>태림 미지급 용역비 대납 (21,000,000 중 일부)</td></tr><tr><td>3</td><td>2026.06.15</td><td>4,000,000</td><td>2026.06.30</td><td>4,000,000</td><td>—</td><td>5월 전기료 부족분 대납 (상환완료)</td></tr><tr><td>4</td><td>2026.07.15</td><td>3,000,000</td><td>2026.07.31</td><td>3,000,000</td><td>—</td><td>6월 전기료 부족분 대납 (상환완료)</td></tr><tr><td>5</td><td>2026.08.18</td><td>15,000,000</td><td>—</td><td>—</td><td>15,000,000</td><td>7월 전기료 부족분 대납 — 8/31 결의서05에서 상환</td></tr><tr><td>6</td><td>2026.08.19</td><td>12,000,000</td><td>—</td><td>—</td><td>12,000,000</td><td>8월말 현재 미지급 도급비 (결의서03 미지급금)</td></tr><tr class="total"><td>계</td><td></td><td>83,675,000</td><td></td><td>18,550,000</td><td>65,125,000</td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">5회차(15,000,000): 08.18 부림이 전기료 대납 → 결의서05에서 08.31 상환 처리. 6회차(12,000,000): 08.19 도급비 미지급분 차용금으로 전환. 차용금이 7월 49,062,264에서 65,125,000으로 16,062,736 증가. 3·4회차는 상환완료.</div>
+    <p class="section-label">안전계좌(관리비) 주요 거래내역 (2026.07.28~08.28)</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>거래일</th><th>거래종류</th><th>출금</th><th>입금</th><th>잔액</th><th>비고</th></tr></thead>
-        <tbody><tr><td>08.11</td><td>펌뱅킹</td><td>—</td><td>1,997</td><td>3,018,400</td><td>SC C74058</td></tr><tr><td>08.11</td><td>대체</td><td>—</td><td>3,984</td><td>3,016,403</td><td>우6021320</td></tr><tr><td>08.05</td><td>인터넷</td><td>—</td><td>634,100</td><td>3,012,419</td><td>금고안경호</td></tr><tr><td>08.05</td><td>인터넷</td><td>—</td><td>639,140</td><td>2,378,319</td><td>금고안경호</td></tr><tr><td>08.05</td><td>대체(출)</td><td>7,000,000</td><td>—</td><td>1,739,179</td><td>태림 위탁관리비 잔여 [8호]</td></tr><tr><td>08.05</td><td>대체(출)</td><td>10,874,528</td><td>—</td><td>8,739,179</td><td>부림 도급비 [8호] — 구성 확인필요</td></tr><tr><td>08.04</td><td>BC(출)</td><td>119,570</td><td>—</td><td>19,613,707</td><td>에스엠크린 청소용품 [2호]</td></tr><tr><td>08.04</td><td>BC(출)</td><td>69,000</td><td>—</td><td>19,733,277</td><td>씨유창원러(봉투53,800+커피15,200) [2호·7호]</td></tr><tr><td>08.03</td><td>모바일</td><td>—</td><td>1,713,800</td><td>19,802,277</td><td>국민이동욱</td></tr><tr><td>08.03</td><td>모바일</td><td>—</td><td>1,552,460</td><td>18,088,477</td><td>우리백성태</td></tr><tr><td>08.03</td><td>대체(출)</td><td>88,680</td><td>—</td><td>16,536,017</td><td>가압류신청 취하보수비 [1호]</td></tr><tr><td>08.03</td><td>현금</td><td>—</td><td>70,000</td><td>16,624,697</td><td>주차비</td></tr><tr><td>08.03</td><td>대체</td><td>—</td><td>1,992</td><td>16,554,697</td><td>신한13840</td></tr><tr><td>07.31</td><td>모바일</td><td>—</td><td>3,200,370</td><td>16,552,705</td><td>경남최진선(102호)</td></tr><tr><td>07.31</td><td>모바일</td><td>—</td><td>1,101,680</td><td>13,352,335</td><td>우리허점순(902호)</td></tr></tbody>
+        <tbody><tr><td>08.28</td><td>모바일</td><td>—</td><td>1,000,000</td><td>12,686,168</td><td>카뱅성재윤</td></tr><tr><td>08.27</td><td>인터넷</td><td>—</td><td>592,500</td><td>11,686,168</td><td>농협(주)케이</td></tr><tr><td>08.27</td><td>인터넷</td><td>—</td><td>593,070</td><td>11,093,668</td><td>농협김홍준</td></tr><tr><td>08.27</td><td>자동이체(출)</td><td>25,900</td><td>—</td><td>10,500,598</td><td>교원청정기 [7호]</td></tr><tr><td>08.27</td><td>대체</td><td>—</td><td>3,984</td><td>10,526,498</td><td>우6021320</td></tr><tr><td>08.25</td><td>인터넷</td><td>—</td><td>700,160</td><td>10,522,514</td><td>경남한서건</td></tr><tr><td>08.24</td><td>인터넷</td><td>—</td><td>2,360,750</td><td>9,822,354</td><td>기업주식회</td></tr><tr><td>08.24</td><td>모바일</td><td>—</td><td>868,010</td><td>7,461,604</td><td>신한신유리</td></tr><tr><td>08.24</td><td>인터넷</td><td>—</td><td>726,550</td><td>6,593,594</td><td>농협강치윤</td></tr><tr><td>08.23</td><td>모바일</td><td>—</td><td>488,150</td><td>5,867,044</td><td>경남위드비</td></tr><tr><td>08.22</td><td>CD공동</td><td>—</td><td>1,034,810</td><td>5,378,894</td><td>신한조영수</td></tr><tr><td>08.21</td><td>모바일</td><td>—</td><td>1,531,210</td><td>4,344,084</td><td>국민정영훈</td></tr><tr><td>08.21</td><td>대체</td><td>—</td><td>1,387,610</td><td>2,812,874</td><td>세인/레이크</td></tr><tr><td>08.21</td><td>자동이체(출)</td><td>126,500</td><td>—</td><td>1,425,264</td><td>S1(N59657) CCTV [1호]</td></tr><tr><td>08.21</td><td>자동이체(출)</td><td>11,000</td><td>—</td><td>1,551,764</td><td>012240534 SKT [1호]</td></tr></tbody>
       </table>
-    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">08.13 현재잔액 3,018,400원. 8/15 전기료 20,601,810 출금 전 세대관리비 유입 필수. [ ] 법정 항목 번호.</div>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">8/28 현재잔액 12,686,168원. [ ] 법정 항목 번호. 8/15 전기료 출금(20,601,810) 등 대형 지출은 7월 잔액에서 처리됨.</div>
+    <p class="section-label">선수금 계좌 거래내역 (2026.02.28~08.28)</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>거래일</th><th>거래종류</th><th>출금</th><th>입금</th><th>잔액</th><th>비고</th></tr></thead>
+        <tbody><tr><td>08.18</td><td>모바일</td><td>—</td><td>1,000,000</td><td>1,000,206</td><td>금고강형빈</td></tr><tr><td>06.28</td><td>예금이자</td><td>—</td><td>4</td><td>206</td><td>이자 4원</td></tr><tr><td>05.15</td><td>대체(출)</td><td>1,000,000</td><td>—</td><td>202</td><td>관리비계좌 이체</td></tr><tr><td>05.13</td><td>모바일</td><td>—</td><td>1,000,000</td><td>1,000,202</td><td>금고강형빈</td></tr><tr class="total"><td>합계</td><td></td><td>4,379,150</td><td>5,379,166</td><td>1,000,206</td><td></td></tr></tbody>
+      </table>
+    </div><div style="font-size:0.74rem;color:var(--text3);margin:4px 0 0;">선수금 계좌 현재잔액 1,000,206원 (08.28). 08.18 강형빈 1,000,000 입금 — 관리비 계좌 이체 예정.</div>
     
     
     <p class="section-label">⚠ 시사점 및 확인 필요 사항</p>
     <div class="fire-grid">
       <div class="fire-card urgent">
-        <div class="floor">🔴 잔액 위기 — 8/15 전기료 20,601,810원</div>
-        <div class="room">8/13 잔액 3,018,400원 — 세대관리비 유입 선행 필수</div>
-        <ul class="items"><li>08.05 태림(7,000,000) + 부림(10,874,528) = 17,874,528 대규모 출금으로 잔액 1,739,179까지 급락</li><li>이후 세대관리비 입금으로 08.13 기준 3,018,400원 회복</li><li>8/15 전기료 20,601,810 납부 위해 최소 17,583,410원 추가 수입 필요</li><li>8월 세대관리비 적시 수납이 핵심 — 납부 현황 일별 점검 권장</li></ul>
+        <div class="floor">🔴 부림 차용금 65,125,000원으로 급증</div>
+        <div class="room">7월 49,062,264 → 8월 65,125,000 (+16,062,736)</div>
+        <ul class="items"><li>5회차(08.18 15,000,000): 7월 전기료 분납 부족분을 부림이 대납 — 결의서05에서 상환 처리</li><li>6회차(08.19 12,000,000): 8월 도급비 미지급금을 차용금으로 전환</li><li>총 차용 83,675,000 / 상환 18,550,000 / 잔금 65,125,000</li><li>미상환 잔금: 1회차 28,125,000 + 2회차 10,000,000 + 5회차 15,000,000 + 6회차 12,000,000 = 65,125,000</li><li>관리비 수입으로 매월 차용금 상환이 반복되는 구조 — 근본적 유동성 개선 필요</li></ul>
       </div>
       <div class="fire-card urgent">
         <div class="floor">🔴 전기료 잔여 16,039,150원 9월 이월</div>
-        <div class="room">3회차 분납 후에도 16,039,150 잔여</div>
-        <ul class="items"><li>3회차 누계 납부: 6/15(16,935,240) + 7/15(18,831,070) + 8/15(20,601,810) = 56,368,120원</li><li>청구서 기준 총 미납 36,640,960 → 8/15 분납 후 잔여 16,039,150원</li><li>연체료: 8월 282,276원 청구 — 미납 지속 시 매월 약 28만원 내외 가산</li><li>7월분 전기 사용량 78,706kWh — 전월(76,561) 대비 소폭 증가. 8월(하절기 피크)은 더욱 증가 예상</li></ul>
+        <div class="room">3회차 분납 후에도 여전히 16,039,150 잔여</div>
+        <ul class="items"><li>3회차 누계 납부: 56,368,120원 (6/15+7/15+8/15)</li><li>7월분 청구 36,640,960 중 20,601,810 납부 → 잔여 16,039,150원</li><li>연체료 8월 청구: 282,276원 — 매월 약 28만원 지속 발생</li><li>7월 사용량 78,706kWh (전월 76,561 대비 +2.8%). 8월(하절기 피크)은 추가 증가 예상</li><li>분납 지속 시 잔여 전기료에 대한 연체가산금 계속 누적 — 조기 완납 방안 검토 필요</li></ul>
       </div>
       <div class="fire-card">
-        <div class="floor">✅ 통합보험료 소급 582,800 근거 완전 해명</div>
-        <div class="room">단가 인상(451,210→742,610) × 6·7월 2개월 소급</div>
-        <ul class="items"><li>8월부터 통합보험료 신단가 742,610원/월 적용 (기존 451,210원 → +291,400)</li><li>6·7월분 소급: 291,400 × 2개월 = 582,800원 — 결의서02에 일괄 청구</li><li>26&#x27;06월분 부림 결의서(08.10 발행)에서 742,610원 확인 완료</li><li>이후 월 도급비 15,228,664원 / 총청구 18,046,664원으로 고정</li></ul>
+        <div class="floor">✅ 상하수도 사용량 정상화 확인</div>
+        <div class="room">2,480,820원 — 전월 예고(4,229,670) 대비 대폭 감소</div>
+        <ul class="items"><li>6월 소화전 누수 수선(06.18~19) 이후 사용량 정상화</li><li>7월 고지서 예고: 4,229,670 → 8월 결의서 확정: 2,480,820 (△1,748,850)</li><li>누수감면 1,170,350 적용 포함된 수치로 실질 절감 효과 확인</li><li>향후 정상 사용량(약 2.5백만원/월) 유지 여부 모니터링 권장</li></ul>
       </div>
       <div class="fire-card">
-        <div class="floor">✅ 501호 성재원 가압류 취하 완료</div>
-        <div class="room">88,680원 법무비 처리 — 501호 분쟁 종결</div>
-        <ul class="items"><li>창원지방법원 2026카단11522 — 2026.08.03 신청취하 및 집행해제 접수</li><li>501호 미납관리비 합의 또는 납부로 가압류 취하 처리 완료로 추정</li><li>법무비 88,680원(수수료55,000+공과금33,680) / 08.03 송금 확인</li><li>201호(이바돔) 소송은 별도 진행 중</li></ul>
+        <div class="floor">⚠ 정보통신설비 관련 신규 지출 발생</div>
+        <div class="room">교육비 150,000 + 대체근무수당 74,820</div>
+        <ul class="items"><li>26년 7월부터 정보통신설비유지관리자선임비 시행</li><li>ICT폴리텍 대학 교육비 150,000(08.24) + 반장 정영길 대체근무수당 74,820(08.25)</li><li>향후 정보통신설비유지관리자선임비가 월정기 지출(안전관리수수료 내)로 추가될 예정</li><li>부림 결의서에 선임비 항목 미계상(&#x27;교육중&#x27;) — 9월부터 계상 여부 확인 필요</li></ul>
       </div>
       <div class="fire-card">
-        <div class="floor">⚠ 부림 도급비 10,874,528 구성 미확인</div>
-        <div class="room">7월 미지급 7,937,264 + 추가분 2,937,264</div>
-        <ul class="items"><li>08.05 부림 계좌 10,874,528 출금 확인</li><li>7월 미지급 잔금 7,937,264 + 추가분 2,937,264 구성 추정</li><li>추가분의 성격(6월 안전관리 일부, 7월 도급 일부 선지급 등) 미확인</li><li>8월분 청구서 수령 후 대조 확인 필요</li></ul>
-      </div>
-      <div class="fire-card urgent">
-        <div class="floor">8/31 결재 예정 — 대규모 지출 예고</div>
-        <div class="room">부림 도급비(18,046,664) + 상하수도(4,229,670) 등</div>
-        <ul class="items"><li>8월분 부림 도급비 18,046,664원(신단가 적용) + 안전관리 2,818,000 포함</li><li>7월분 상하수도료 4,229,670원(납기 07.31~08.31)</li><li>주차장 공사비 9회차 1,650,000 + 관리단 판공비 200,000 등</li><li>8/31 예상 결재 합계 최소 27,000,000원 이상 — 8월 세대관리비 수입으로 충당 필요</li></ul>
+        <div class="floor">✅ 501호 가압류 취하 완료</div>
+        <div class="room">88,680원 — 성재원 가압류 해제</div>
+        <ul class="items"><li>창원지방법원 2026카단11522 — 2026.08.03 신청취하 및 집행해제</li><li>501호 미납관리비 해결로 추정</li><li>201호(이바돔 김정란) 소송은 계속 진행 중 — 추가 법무비용 예상</li></ul>
       </div>
       <div class="fire-card">
-        <div class="floor">8월 현황 구성 영수증 완비</div>
-        <div class="room">결의서(01)(02) 모든 항목 영수증 확인 완료</div>
-        <ul class="items"><li>전기료 청구서 원본(한전) — 당월요금 + 미납구성 상세 확인</li><li>SKT 승강기비상전화 3,850 / 카드단말기 11,000 청구서 확인</li><li>에스엠크린 119,570(거래명세서) + CU 69,000 영수증 확인</li><li>방역비 200,000 영수증(진성개발) + 쿠팡 62,400(다운라이트+석회분해제+호스펌프) 확인</li><li>501호 가압류취하 88,680 법원접수증명서 + 영수증 + 송금확인증 완비</li></ul>
+        <div class="floor">8월 잔액 회복 — 7월말 대비 개선</div>
+        <div class="room">8/28 잔액 12,686,168원 (7/31 16,552,705 → 회복)</div>
+        <ul class="items"><li>8/15 전기료(20,601,810) + 8/5 태림·부림(17,874,528) 등 대규모 출금에도 회복</li><li>8월 세대관리비 수입 적시 유입으로 12.7백만원 수준 유지</li><li>8/31 결재 예정액(37,786,784) 처리를 위해 추가 세대관리비 수납 필요</li><li>선수금 계좌에 1,000,206원 별도 보유 (08.18 강형빈 입금 미이체 포함)</li></ul>
       </div></div>
 
     <div style="margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:0.72rem;color:var(--text3);">
-      레이크펄스 빌딩 관리사무소 &nbsp;·&nbsp; 2026년 8월 &nbsp;·&nbsp; 상태: 중간집계 &nbsp;·&nbsp; 최종 업데이트: 2026-08-14
+      레이크펄스 빌딩 관리사무소 &nbsp;·&nbsp; 2026년 8월 &nbsp;·&nbsp; 상태: 마감예정 &nbsp;·&nbsp; 최종 업데이트: 2026-08-31
     </div>
   </div><!-- /panel-8 -->
 
